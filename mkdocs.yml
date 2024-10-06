@@ -1,0 +1,5 @@
+site_name: My Notes
+site_url: https://ronakr14.github.io/Notes/
+theme:
+  name: material
+  language: en
