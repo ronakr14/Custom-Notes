@@ -1,0 +1,6 @@
+[submodule "Machine-Learning"]
+	path = Machine-Learning
+	url = https://github.com/ronakr14/Machine-Learning.git
+[submodule "Deep-Learning"]
+	path = Deep-Learning
+	url = https://github.com/ronakr14/Deep-Learning.git

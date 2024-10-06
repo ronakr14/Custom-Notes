@@ -1,0 +1,6 @@
+[submodule "Linux"]
+	path = Linux
+	url = https://github.com/ronakr14/Linux.git
+[submodule "Windows"]
+	path = Windows
+	url = https://github.com/ronakr14/Windows.git

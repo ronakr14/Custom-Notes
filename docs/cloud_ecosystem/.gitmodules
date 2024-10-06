@@ -1,0 +1,9 @@
+[submodule "Amazon-Web-Service"]
+	path = Amazon-Web-Service
+	url = https://github.com/ronakr14/Amazon-Web-Service.git
+[submodule "Google-Cloud-Platform"]
+	path = Google-Cloud-Platform
+	url = https://github.com/ronakr14/Google-Cloud-Platform.git
+[submodule "Microsoft-Azure"]
+	path = Microsoft-Azure
+	url = https://github.com/ronakr14/Microsoft-Azure.git
