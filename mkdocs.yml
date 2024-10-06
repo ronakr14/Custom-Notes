@@ -35,15 +35,15 @@ theme:
     - content.code.copy
 
 nav:
-  - AI/ML: artificial_intelligence/index.md
+  - AI/ML: ai_ml/index.md
   - Languages: languages/index.md
-  - Data Architecture: database_datawarehouse/index.md
-  - Container: https://ronakr14.github.io/Containers/
-  - Version Control: https://ronakr14.github.io/Version-Control-Systems/
+  - Data Architecture: data_architecture/index.md
+  - Container: container/index.md
+  - Version Control: version_control/index.md
   - Projects: projects/index.md
   - API: api/index.md
-  - OS: https://ronakr14.github.io/Operating-Systems/
-  - Cloud Ecosystem: https://ronakr14.github.io/Cloud-Technologies/
+  - OS: os/index.md
+  - Cloud Ecosystem: cloud_ecosystems/index.md
   - Portfolio: https://ronakr14.github.io
   
 markdown_extensions:

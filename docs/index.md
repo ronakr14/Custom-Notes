@@ -1,14 +1,15 @@
 # Welcome to My Notes
 
-## [Languages](languages/index.md)
-Explore various programming languages, their syntax, features, and applications. This section includes notes on languages such as Python, JavaScript, and more.
+## [Programming Languages](languages/index.md)
+Explore various programming languages, their syntax, features, and applications. This section includes notes on languages such as Python, Java, JavaScript, and more.
 
 |#|Concept|#|Concept|#|Concept|#|Concept|
 |---|---|---|---|---|---|---|---|
-|1. |[C](languages/c/index.md)|2.|[C++](languages/c++/index.md)|3. |[HTML](languages/html/index.md)|4.|[Java](languages/java/index.md)|
-|5. |[JavaScript](languages/javascript/index.md)|6.|[Markdown](languages/markdown/index.md)|7. |[Python](languages/python/index.md)|8.|[Scala](languages/scala/index.md)|
+|1. |[Python](languages/python/index.md)|2.|[Scala](languages/scala/index.md)|3. |[Bash](languages/bash/index.md)|4.|[Java](languages/java/index.md)|
+|5. |[JavaScript](languages/javascript/index.md)|6.|[C](languages/c/index.md)|7. |[C++](languages/c++/index.md)|8.|[Markdown](languages/markdown/index.md)|
+|9.|[HTML](languages/html/index.md)|10.|[CSS](languages/css/index.md)|||||
 
-## [Data Architecture](data_architecture/index.md)
+<!-- ## [Data Architecture](data_architecture/index.md)
 Learn about different types of databases and data warehouses, including relational databases, NoSQL databases, and data warehousing concepts. This section covers SQL, NoSQL, data modeling, and more.
 
 |#|Concept|#|Concept|#|Concept|#|Concept|
@@ -64,4 +65,4 @@ Understand APIs (Application Programming Interfaces), how they work, and how to 
 |---|---|---|---|---|---|---|---|
 |1. |[AMQP](api/amqp.md)|2. |[EDA](api/eda.md)|3. |[EDI](api/edi.md)|4. |[GPRC](api/gprc.md)|
 |5. |[GraphQL](api/graphql.md)|6. |[MQTT](api/mqtt.md)|7. |[REST](api/rest.md)|8. |[SOAP](api/soap.md)|
-|9. |[WebHooks](api/webhooks.md)|10.|[WebSockets](api/websocket.md)|
+|9. |[WebHooks](api/webhooks.md)|10.|[WebSockets](api/websocket.md)| -->

@@ -1,9 +1,0 @@
-[submodule "Podman"]
-	path = Podman
-	url = https://github.com/ronakr14/Podman.git
-[submodule "Docker"]
-	path = Docker
-	url = https://github.com/ronakr14/Docker.git
-[submodule "Kubernetes"]
-	path = Kubernetes
-	url = https://github.com/ronakr14/Kubernetes.git
