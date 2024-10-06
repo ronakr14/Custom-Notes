@@ -1,0 +1,1061 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ronakr14.github.io/Notes/languages/Python/libraries_frameworks/python%20for%20scientist/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>Python for Scientists - My Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#python-for-scientists" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="My Notes" class="md-header__button md-logo" aria-label="My Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Python for Scientists
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="white"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="white"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../artificial_intelligence/index.md" class="md-tabs__link">
+        
+  
+    
+  
+  AI/ML
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../" class="md-tabs__link">
+        
+  
+    
+  
+  Languages
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../database_datawarehouse/index.md" class="md-tabs__link">
+        
+  
+    
+  
+  Data Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://ronakr14.github.io/Containers/" class="md-tabs__link">
+        
+  
+    
+  
+  Container
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://ronakr14.github.io/Version-Control-Systems/" class="md-tabs__link">
+        
+  
+    
+  
+  Version Control
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../projects/" class="md-tabs__link">
+        
+  
+    
+  
+  Projects
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../api/" class="md-tabs__link">
+        
+  
+    
+  
+  API
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://ronakr14.github.io/Operating-Systems/" class="md-tabs__link">
+        
+  
+    
+  
+  OS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://ronakr14.github.io/Cloud-Technologies/" class="md-tabs__link">
+        
+  
+    
+  
+  Cloud Ecosystem
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://ronakr14.github.io" class="md-tabs__link">
+        
+  
+    
+  
+  Portfolio
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="My Notes" class="md-nav__button md-logo" aria-label="My Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My Notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../artificial_intelligence/index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI/ML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Languages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../database_datawarehouse/index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://ronakr14.github.io/Containers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Container
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://ronakr14.github.io/Version-Control-Systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Version Control
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://ronakr14.github.io/Operating-Systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://ronakr14.github.io/Cloud-Technologies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cloud Ecosystem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://ronakr14.github.io" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Portfolio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="python-for-scientists">Python for Scientists</h1>
+<h2 id="algebra">Algebra</h2>
+<p><em>Libraries for manipulation of symbolic algebra, analytic integration etc.</em></p>
+<ul>
+<li><a href="https://www.sympy.org/en/index.html">SymPy</a> - SymPy is a Python library for symbolic mathematics.
+It aims to become a full-featured computer algebra system (CAS) while keeping the code as simple as possible in order to be comprehensible and easily extensible.</li>
+<li><a href="http://www.sagemath.org/">sagemath</a> - Mathematical software system with features covering multiple aspects of mathematics, including algebra, combinatorics, numerical mathematics, number theory, and calculus.</li>
+</ul>
+<h2 id="animations">Animations</h2>
+<ul>
+<li><a href="https://animatplot.readthedocs.io/en/stable/">animatplot</a> - A wrapper around <code>matplotlib</code>'s <code>funcanimation</code> module - makes it very easy to animate matplotlib plots.</li>
+<li><a href="https://holypython.com/python-visualization-tutorial/guide-to-python-animations-animating-line-charts/">Line Chart Animation Tutorial</a> - A practical tutorial for creating Animated Line Charts with Matplotlib's Animation module.</li>
+<li><a href="https://holypython.com/python-visualization-tutorial/creating-bar-chart-animations/">Bar Chart Animation Tutorial</a> - A practical tutorial for creating Animated Bar Charts with Matplotlib's Animation module.</li>
+</ul>
+<h2 id="bayesian-analysis">Bayesian Analysis</h2>
+<ul>
+<li><a href="https://docs.pymc.io/">pymc3</a> - Package for Bayesian statistical modeling and probabilistic machine learning which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms.</li>
+<li><a href="https://arviz-devs.github.io/arviz/index.html">arviz</a> - Exploratory analysis of Bayesian models.</li>
+</ul>
+<h2 id="better-scientific-software">Better Scientific Software</h2>
+<ul>
+<li><a href="https://bssw.io/">Better Scientific Software</a> - Articles and resources on how to write better scientific software.</li>
+</ul>
+<h2 id="code-quality">Code Quality</h2>
+<p><em>Tools to help you write neat and error-free python code</em></p>
+<ul>
+<li><a href="https://www.python.org/dev/peps/pep-0008/">PEP8</a> - The official style guide for python code.</li>
+<li><a href="https://docs.python-guide.org/writing/structure/">structure</a> - The officially recommended way to structure any python project.</li>
+<li><a href="http://flake8.pycqa.org/en/latest/">flake8</a> - A command-line tool which will tell you where you've violated PEP8's recommendations.</li>
+<li><a href="https://pypi.org/project/pyflakes/">pyflakes</a> - Similar to flake8, but instead checks for logistic errors (e.g. unused module imports).</li>
+<li><a href="https://media.readthedocs.org/pdf/pycodestyle/latest/pycodestyle.pdf">pycodestyle</a> - A wrapper for flake8 and pyflakes which runs them both.</li>
+<li><a href="http://pylint.pycqa.org/en/latest/intro.html">pylint</a> - A tool that checks for errors in Python code, tries to enforce a coding standard and looks for code smells.</li>
+</ul>
+<h2 id="data-storage">Data Storage</h2>
+<ul>
+<li><a href="http://unidata.github.io/netcdf4-python/">netcdf4-python</a> - netCDF is a popular file format for multidimensional data, developed by the weather and forecasting community. Use this format unless you have a good reason not to.
+netcdf4-python is a Python interface to the netCDF C library.</li>
+<li><a href="http://xarray.pydata.org/en/stable/io.html#netcdf">xarray</a> - xarray's data model is based on netCDF, and provides the easiest way of reading and writing netCDF4 files in python.
+Will also load the data lazily, which is extremely useful when dealing with large amounts of data.</li>
+<li><a href="https://github.com/zarr-developers/zarr-python">Zarr</a> - Zarr is a data format designed to work efficiently for very large datasets, accessed in parallel. If you normally use netCDF but want to scale up your analysis, have a look at Zarr.</li>
+<li><a href="https://xmitgcm.readthedocs.io/en/latest/">xmitgcm</a> - A python package for reading MITgcm binary MDS files into xarray data structures.
+Included as an example of how to go about loading unusual binary file formats into xarray data structures intelligently.</li>
+<li><a href="https://holypython.com/python-sqlite-tutorial/">SQLite Tutorials</a> - SQLite Tutorials with Python examples, demonstrations and database tips.</li>
+</ul>
+<h2 id="debugging">Debugging</h2>
+<ul>
+<li><a href="https://docs.python.org/3/library/pdb.html">pdb</a> - The Python debugger. Part of the python standard library.</li>
+</ul>
+<h2 id="development-environments">Development Environments</h2>
+<p><em>Programs to write code into. The main choice is between a software-engineering style IDE, and one intended specifically for scientific users.</em></p>
+<ul>
+<li><a href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a> - An IDE which incorporates Jupyter notebooks.</li>
+<li><a href="https://www.jetbrains.com/pycharm/">PyCharm</a> - Very powerful IDE for python. Use if you want the full powers a software engineer would expect.
+Has a professional version, which is free for students.</li>
+<li><a href="https://www.spyder-ide.org/">spyder</a> - MatLab-like development environment for scientific python users.</li>
+</ul>
+<h2 id="documentation">Documentation</h2>
+<ul>
+<li><a href="http://www.sphinx-doc.org/en/master/">sphinx</a> - Sphinx is a tool that makes it easy to create intelligent and beautiful documentation, from the docstrings in your code.
+Originally created for documenting the python language itself.</li>
+<li><a href="https://nbconvert.readthedocs.io/en/latest/">nbconvert</a> - Convert jupyter notebooks to other formats such as PDF, LaTeX, HTML.</li>
+</ul>
+<h2 id="domain-specific-tools">Domain-Specific Tools</h2>
+<p><em>Libraries of tools developed for python users in various fields of science.</em></p>
+<ul>
+<li><a href="http://www.astropy.org/">astropy</a> - Various tools and functionality for astronomy and astrophysics.</li>
+<li><a href="https://biopython.org/">Biopython</a> - Tools for biological computation.</li>
+<li><a href="http://geoviews.org/">geoviews</a> - Makes it easy to explore and visualize geographical, meteorological, and oceanographic datasets, such as those used in weather, climate, and remote sensing research.</li>
+<li><a href="https://graph-tool.skewed.de/">graph-tool</a> - Efficient manipulation, visualization and statistical analysis of graphs and networks.</li>
+<li><a href="https://unidata.github.io/MetPy/latest/">MetPy</a> - MetPy is a collection of tools in Python for reading, visualizing and performing calculations with weather data.</li>
+<li><a href="http://networkx.github.io/">NetworkX</a>  - A package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.</li>
+<li><a href="http://nilearn.github.io/">nilearn</a> - Machine learning for Neuro-Imaging in python.</li>
+<li><a href="http://oceanparcels.org/">Parcels</a> - Track particles along circulating ocean currents.</li>
+<li><a href="http://docs.plasmapy.org/en/stable/">PlasmaPy</a> - Various tools for plasma physics.</li>
+<li><a href="http://prody.csb.pitt.edu/">ProDy</a> - Package for protein structural dynamics analysis.</li>
+<li><a href="http://www.psychopy.org/">psychopy</a> - An open-source application allowing you run a wide range of neuroscience, psychology and psychophysics experiments.</li>
+<li><a href="https://pyrocko.org/">pyrocko</a> - A seismology toolkit for python.</li>
+<li><a href="http://qutip.org/">QuTIP</a> - QuTiP is open-source software for simulating the dynamics of open quantum systems.</li>
+<li><a href="https://github.com/radis/radis">radis</a> - A package for infrared molecular spectroscopy</li>
+<li><a href="https://github.com/scikit-beam/scikit-beam">scikit-beam</a> - Data analysis tools for X-Ray, Neutron and Electron sciences</li>
+<li><a href="http://hugadams.github.io/scikit-spectra/">scikit-spectra</a> - A community developed python package for spectroscopy.</li>
+<li><a href="https://sunpy.org/">SunPy</a> - SunPy is a data-analysis environment specializing in providing the software necessary to analyze solar and heliospheric data in Python.</li>
+<li><a href="https://tomopy.readthedocs.io/en/latest/">TomoPy</a> - Package for tomographic data processing and image reconstruction.</li>
+</ul>
+<h2 id="error-handling">Error Handling</h2>
+<ul>
+<li><a href="https://docs.python.org/3/tutorial/errors.html">errors</a> - How to properly raise and handle errors in python.</li>
+<li><a href="https://docs.python.org/3/library/warnings.html">warnings</a> - Throw proper warnings instead of using print statements. Python standard library module.</li>
+<li><a href="https://docs.python.org/3/library/logging.html">logging</a> - Standard library module for properly logging information about what's going on as your code runs.</li>
+</ul>
+<h2 id="forecasting">Forecasting</h2>
+<ul>
+<li><a href="https://facebook.github.io/prophet/">prophet</a> - Tool for producing high quality forecasts for time series data that has multiple seasonality with linear or non-linear growth.
+Developed by Facebook.</li>
+</ul>
+<h2 id="gotchas">Gotchas</h2>
+<ul>
+<li><a href="https://github.com/satwikkansal/wtfpython">python-gotchas</a> - A collection of surprising Python snippets and lesser-known features.</li>
+<li><a href="https://holypython.com/100-python-tips-tricks/">100 Python Tips &amp; Tricks</a> - 100 Essential Python Tips with interesting Examples</li>
+</ul>
+<h2 id="gpu-acceleration">GPU Acceleration</h2>
+<ul>
+<li><a href="https://cupy.chainer.org/">cupy</a> - An implementation of a NumPy-compatible multi-dimensional array on CUDA.</li>
+<li><a href="http://numba.pydata.org/numba-doc/0.13/CUDAJit.html">numba</a> - Numba can compile python functions into CUDA code.</li>
+</ul>
+<h2 id="graphical-interfaces">Graphical Interfaces</h2>
+<ul>
+<li><a href="http://pyqt.sourceforge.net/Docs/PyQt5/">pyqt5</a> - Library which lets you use the Qt GUI framework (itself written in C++) from python.</li>
+<li><a href="http://pyqt.sourceforge.net/Docs/PyQt5/">PySimpleGui</a> - A simple library for creating GUI programs with Python very quickly.</li>
+<li><a href="https://holypython.com/python-gui-tutorial/">Practical PySimpleGui Tutorials</a> - Useful PySimpleGui Tutorials with Python Examples</li>
+</ul>
+<h2 id="job-scheduling">Job Scheduling</h2>
+<ul>
+<li><a href="https://experi.readthedocs.io/en/latest/">experi</a> - An interface for managing computational experiments with many independent variables.</li>
+<li><a href="http://ioam.github.io/lancet/">lancet</a> - Launch jobs, organize the output, and dissect the results.</li>
+<li><a href="https://papermill.readthedocs.io/en/latest/">papermill</a> - A  tool for parameterizing, executing, and analyzing multiple Jupyter Notebooks.</li>
+</ul>
+<h2 id="labelled-data">Labelled Data</h2>
+<ul>
+<li><a href="https://pandas.pydata.org/">pandas</a> - Major library for data analysis, made more powerful through the use of labelled data.</li>
+<li><a href="http://xarray.pydata.org/en/stable/">xarray</a> - N-dimensional labelled arrays and datasets.
+Allows you to perform operations with incredible ease and clarity:
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">average_temp</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;temperature&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="s1">&#39;longitude&#39;</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s1">&#39;time&#39;</span><span class="p">)</span>
+</code></pre></div></li>
+</ul>
+<h2 id="mathematical-library-functions">Mathematical Library Functions</h2>
+<ul>
+<li><a href="https://docs.scipy.org/doc/scipy/reference/">scipy</a> - The standard resource for all kinds of mathematical functions.</li>
+<li><a href="https://xrft.readthedocs.io/en/latest/">xrft</a> - Discrete Fourier transform operations for xarray data structures.</li>
+</ul>
+<h2 id="numerical-data">Numerical Data</h2>
+<ul>
+<li><a href="http://www.numpy.org/">numpy</a> - The fundamental package for numerical computation in python.
+So ubiquitous that it might as well be part of python's standard library at this point.
+Ultimately just a contiguous-in-memory C array, wrapped very nicely with python.</li>
+</ul>
+<h2 id="optimisation-problems">Optimisation Problems</h2>
+<ul>
+<li><a href="https://github.com/stevengj/nlopt">nlopt</a> - Library for nonlinear optimization, wrapping many algorithms for global and local, constrained or unconstrained, optimization.</li>
+</ul>
+<h2 id="package-management">Package Management</h2>
+<p><em>Keep track of module dependencies, python versions, and virtual environments.</em></p>
+<ul>
+<li><a href="https://conda.io/docs/index.html">conda</a> - A package manager specifically intended for use by the scientific python community.
+Developed by the authors of numpy to manage both python packages and the underlying C/Fortran libraries which make them fast.
+Also obviates the need for system virtual environments.</li>
+<li><a href="https://www.anaconda.com/">anaconda</a> - Conda, but packaged with a wide range of useful scientific python libraries, including many from this list.</li>
+<li><a href="https://pip.pypa.io/en/stable/">pip</a> - The standard way to install python packages. Use when you can't use conda, but will play nicely together.</li>
+<li><a href="https://setuptools.readthedocs.io/en/latest/">setuptools</a> - For when you make your own module, and want to install it properly into your conda environment (so you never need to touch your <code>$PYTHONPATH</code>!)</li>
+</ul>
+<h2 id="paper-writing">Paper Writing</h2>
+<ul>
+<li><a href="https://github.com/nschloe/tikzplotlib">tikzplotlib</a> - A converter that takes a matplotlib figure and spits out a TikZ/PGFplots figure for smooth integration into LaTeX.
+Much better than having to try and alter details of a png image later on.</li>
+<li><a href="https://github.com/natj/sci_writing">Scientific Writing</a> - Not python, but a few useful tips on scientific writing.</li>
+</ul>
+<h2 id="parallelization">Parallelization</h2>
+<p><em>Use all the cores of your machine, and scale up to clusters!</em></p>
+<ul>
+<li><a href="https://dask.org/">dask</a> - Tools for splitting up computations and executing them across many processors in parallel.
+<a href="http://docs.dask.org/en/latest/array.html">dask.array</a> in particular provides a numpy-like interface to a chunked-in-memory array.
+Dask is especially useful for analysing datasets which are larger than your RAM.</li>
+<li><a href="http://xarray.pydata.org/en/stable/">xarray</a> - Employs dask behind the scenes to parallelize most operations.
+  Simply load your dataset in "chunks" and xarray will operate on each chunk in parallel:
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Load data in chunks</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">ds</span> <span class="o">=</span> <span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;data.nc&#39;</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;space&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="p">}</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Will operate on each spatial chunk in parallel using dask</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">ds</span><span class="p">[</span><span class="s1">&#39;density&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s1">&#39;time&#39;</span><span class="p">)</span>
+</code></pre></div></li>
+</ul>
+<h2 id="physical-units">Physical Units</h2>
+<p><em>Keep track of which physical units your numbers are written in.</em></p>
+<ul>
+<li><a href="https://pint.readthedocs.io/en/0.9/">pint</a> - Package to define, operate and manipulate physical quantities.</li>
+<li><a href="http://docs.astropy.org/en/stable/units/">astropy.units</a> - Submodule of astropy which handles units. Units multiply numpy arrays directly.</li>
+</ul>
+<h2 id="plotting">Plotting</h2>
+<p><em>Producing static plots of publication quality. (For 3D plots see the </em>Visualisation<em> section)</em></p>
+<ul>
+<li><a href="https://matplotlib.org/">matplotlib</a> - A 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.
+The standard way to plot data in python.</li>
+<li><a href="https://github.com/matplotlib/AnatomyOfMatplotlib">anatomy of matplotlib</a> - Tutorials on how to use matplotlib.</li>
+<li><a href="https://realpython.com/python-matplotlib-guide/">matplotlib guide</a> - Article explaining how matplotlib is intended to be used, and will help clarify the differences between figures and axes, object-oriented approach, MATLAB-like stateful approach, interactivity etc. Also good because it gives clear best practice recommendations.</li>
+<li><a href="https://github.com/garrettj403/SciencePlots">scientific-matplotlib</a> - Matplotlib stylesheets for scientific plots.</li>
+<li><a href="https://seaborn.pydata.org/">seaborn</a> - A  data visualisation library based on matplotlib. Produces much prettier plots than out-of-the-box matplotlib will.</li>
+<li><a href="http://xarray.pydata.org/en/stable/plotting.html">xarray.plot</a> - Submodule of xarray which makes plotting into a one-line job: <code>data['density'].plot()</code>.</li>
+<li><a href="http://colorcet.pyviz.org/">colorcet</a> - A set of useful <a href="https://arxiv.org/abs/1509.03700">perceptually uniform</a> colormaps for plotting scientific data.</li>
+<li><a href="https://holypython.com/python-visualization-tutorial/creating-hexbin-charts/">Hexbin</a> - Hexbin plotting tutorials.</li>
+<li><a href="https://holypython.com/python-visualization-tutorial/pcolor-and-pcolormesh/">Pcolor</a> - Pcolor and Pcolormesh tutorials</li>
+<li><a href="https://holypython.com/python-visualization-tutorial/word-cloud-visualization/">Wordcloud</a> - Wordcloud Visualization with Python examples</li>
+<li><a href="https://holoviews.org/">holoviews</a> - A much more modern plotting library, useful for all sorts of scientific data. Interactive, scalable, and animatable.</li>
+</ul>
+<h2 id="presentations-and-sharing-work">Presentations and Sharing Work</h2>
+<ul>
+<li><a href="https://mybinder.org/">Binder</a> - Online Jupyter Notebook hosting for GitHub repositories.
+Allows users to run Jupyter notebooks from GitHub repositories in the cloud, without Python installed locally.</li>
+<li><a href="https://github.com/t-makaro/nb_pdf_template">nb_pdf_template</a> - A more accurate representation of jupyter notebooks when converting to pdfs.</li>
+<li><a href="https://rise.readthedocs.io/en/docs_hot_fixes/">RISE</a> - A plugin for Jupyter which turns notebooks into slick presentations.</li>
+<li><a href="https://github.com/binder-examples/jupyter-rise">jupyter-rise</a> - Automatically launch the RISE plugin from Binder. Great for giving presentations remotely.</li>
+</ul>
+<h2 id="profiling-and-benchmarking">Profiling and benchmarking</h2>
+<ul>
+<li><a href="https://github.com/benfred/py-spy">py-spy</a> - A profiler for python code which doesn't interfere with the running process.</li>
+<li><a href="https://pytest-benchmark.readthedocs.io/en/stable/">pytest-benchmark</a> - A pytest fixture for benchmarking code.</li>
+</ul>
+<h2 id="scripting">Scripting</h2>
+<p><em>Tools which are likely to be useful when writing python scripts to automate common tasks.</em></p>
+<ul>
+<li><a href="https://palletsprojects.com/p/click/">click</a> - Run your scripts from the command line, with as little extra code as possible.</li>
+<li><a href="https://dateutil.readthedocs.io/en/stable/">dateutil</a> - Provides powerful extensions to the standard datetime module available in Python.</li>
+<li><a href="https://gitpython.readthedocs.io/en/stable/">gitpython</a> - Interact with git from python. Useful for tasks like checking if your simulation code has uncommitted changes before executing it.</li>
+<li><a href="https://docs.python.org/3/library/pathlib.html">pathlib</a> - Use this anytime you want to do anything with a file path. Obviates the need for <code>os</code> and <code>sys</code> most of the time.
+A module in the python standard library.</li>
+<li><a href="https://holypython.com/how-to-schedule-tasks-with-py-files-python-manual-automated/">Event Scheduling</a> - Event scheduling script examples for Python </li>
+</ul>
+<h2 id="speed">Speed</h2>
+<p><em>Python inevitably sacrifices some speed to gain increased clarity.
+Scientific programs usually have one or two functions which do 90% of the work, and there are various ways to dramatically speed these up.
+Use in conjunction with parallelization through dask if you want as much speed as possible.</em></p>
+<ul>
+<li><a href="https://cython.org/">cython</a> - A compiler which allows you to write snippets of C code into your python for massive speed increases.</li>
+<li><a href="https://docs.scipy.org/doc/numpy/f2py/">F2PY</a> - For calling fast, compiled Fortran subroutines from Python (part of SciPy)</li>
+<li><a href="https://numba.pydata.org/">numba</a> - <em>Automatic</em> generation of fast compiled C code from Python functions.</li>
+<li><a href="https://kwgoodman.github.io/bottleneck-doc/">bottleneck</a> - A collection of fast numpy array functions written in C.</li>
+<li><a href="http://www.deeplearning.net/software/theano/">Theano</a> - Allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.</li>
+</ul>
+<h2 id="statistics">Statistics</h2>
+<ul>
+<li><a href="http://www.statsmodels.org/stable/index.html">statsmodels</a> - Provides classes and functions for the estimation of many different statistical models, as well as for conducting statistical tests, and statistical data exploration.</li>
+</ul>
+<h2 id="testing">Testing</h2>
+<p><em>Check that your code actually does what you think it will do!</em></p>
+<ul>
+<li><a href="https://docs.pytest.org/en/latest/">pytest</a> - The standard unit testing framework for python.
+Essential - if you're not unit-testing your calculations then you are merely hoping that they are actually doing what you think they are.
+<code>pytest</code> does a lot of magic behind the scenes to make it as simple as possible to use, with no boilerplate.</li>
+<li><a href="https://github.com/darrenburns/pytest-clarity">pytest-clarity</a> - A plugin which improves the readability of pytest output.</li>
+<li><a href="https://hypothesis.readthedocs.io/en/latest/">hypothesis</a> - Hypothesis testing for python.
+Normal tests check that your function behaves as expected for some specific input.
+Hypothesis tests check that your function behaves as expected for any input of some type, e.g. any string, or <a href="https://hypothesis.readthedocs.io/en/latest/numpy.html">any numpy array</a>.
+Basically magic, compatible with pytest, and the algorithms used in the implementation are very interesting.</li>
+<li><a href="https://cosmic-ray.readthedocs.io/en/latest/">cosmic-ray</a> - Mutation testing in python. Checks that your test coverage is robust by randomly changing pieces of your code and checking that this change is actually caught by a test failing.</li>
+<li><a href="https://pypi.org/project/flaky/">flaky</a> - pytest plugin for automatically re-running inconsistent ("flaky") tests.</li>
+</ul>
+<h2 id="visualisation">Visualisation</h2>
+<p><em>There are currently many competing visualisation libraries in python.</em></p>
+<ul>
+<li><a href="https://animatplot.readthedocs.io/en/stable/">animatplot</a> - A wrapper around <code>matplotlib</code>'s <code>funcanimation</code> library - makes it very easy to animate matplotlib plots.</li>
+<li><a href="http://docs.enthought.com/mayavi/mayavi/">mayavi</a> - 3D scientific data visualization and plotting in Python.</li>
+<li><a href="https://scitools.org.uk/cartopy/docs/latest/">cartopy</a> -  A library for cartographic projections and plots, with matplotlib support.</li>
+<li><a href="https://bokeh.pydata.org/en/latest/">bokeh</a> - Bokeh is an interactive visualization library that targets modern web browsers for presentation.</li>
+<li><a href="https://github.com/K3D-tools/K3D-jupyter">K3D-jupyter</a> - K3D-jupyter is a new 3D plotting library which uses WebGL to create interactive plots in jupyter notebooks. Very powerful and fast, with some <a href="https://k3d-jupyter.readthedocs.io/en/latest/showcase/index.html">seriously impressive examples</a>. However as of early 2020 the <a href="https://k3d-jupyter.readthedocs.io/en/latest/index.html">documentation</a> is a little lacking.</li>
+<li><a href="https://plot.ly/python/">plotly</a> - Plotly's Python graphing library makes interactive, publication-quality graphs online.</li>
+<li><a href="http://holoviews.org/">holoviews</a> - Stop plotting your data - annotate your data and let it visualize itself.</li>
+<li><a href="https://ipyvolume.readthedocs.io/en/latest/index.html#built-on-ipywidgets">ipyvolume</a> - 3d plotting for Python in the Jupyter notebook.</li>
+<li><a href="http://vispy.org/index.html">vispy</a> - Interactive scientific visualisation in python.</li>
+<li><a href="https://pypi.org/project/vtk/">vtk</a> - Low-level VTK interface</li>
+<li><a href="https://docs.pyvista.org/">vista</a> - Streamlined interface to VTK - mainly a wrapper for VTK package</li>
+<li><a href="http://yt-project.org/">yt</a> - Very powerful software suite for analysing and visualising volumetric data.
+Written by astrophysicists, but since applied to many other domains.</li>
+</ul>
+<h2 id="workflow">Workflow</h2>
+<p><em>Don't just write and run python scripts. Tools to make your workflow faster, clearer, and easier to come back to later.</em></p>
+<ul>
+<li><a href="https://ipython.readthedocs.io/en/stable/">ipython</a> - Run python interactively, like MatLab! Forms the backend of Jupyter notebooks.</li>
+<li><a href="https://jupyter.org/">jupyter notebooks</a> - In-browser notebooks comprised of cells which can contain markdown, images, or executable python code! Incredibly valuable for data exploration, presentation and recording work. The perfect format to email to a supervisor for feedback. Can be version-controlled with git so also useful for reproducibility and backing up your work.</li>
+<li><a href="https://jupyterlab.readthedocs.io/en/stable/">jupyterlab</a> - A development environment in which you can write Jupyter notebooks.
+The spiritual successor to spyder, in that it is designed specifically for scientists.</li>
+<li><a href="https://papermill.readthedocs.io/en/latest/">papermill</a> - A  tool for parameterizing, executing, and analyzing multiple Jupyter Notebooks.</li>
+</ul>
+<h1 id="beginner-recommendations">Beginner Recommendations</h1>
+<ul>
+<li>First, install python through anaconda, which will also give you the packages you're about to use.</li>
+<li>Write your code in either <code>pycharm</code> (if you want a professional IDE), <code>spyder</code> or  <code>jupyterlab</code> (if you're used to MatLabs' environment).</li>
+<li>Become familiar with <code>numpy</code>, the fundamental numeric object in python, and <code>matplotlib</code>, the standard way to plot.</li>
+<li>Next, wrap your data into clearer, higher-level objects with either <code>Pandas</code> or <code>xarray</code> (use <code>xarray</code> if your data has more than one dimension).</li>
+<li>Before writing new analysis functions, check if someone has already solved your problem for you in <code>scipy</code> , or in one of python's domain-specific scientific software packages.</li>
+<li>As soon as you start writing your own analysis functions, test they're correct with unit tests written with <code>pytest</code>.</li>
+<li>Analyse your data interactively with <code>ipython</code>, and record your work in a <code>Jupyter notebook</code>.</li>
+<li>Plot your results with <code>holoviews</code>.</li>
+</ul>
+<hr />
+<h2 id="data-visualisation-tips">Data visualisation tips</h2>
+<ul>
+<li><a href="https://github.com/cxli233/FriendsDontLetFriends">"Friends don't let friends make bad graphs"</a> - A collection of useful tips on why certain types of publication figures are very misleading, illustrated with examples of the problem and what to do instead.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://github.com/ronakr14"  target="_blank" rel="noopener">Ronak Rathore</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ronakr14" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ronakr14" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ronakr14" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ronakr14" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
