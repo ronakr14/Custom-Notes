@@ -1,0 +1,2370 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ronakr14.github.io/Notes/languages/python/libraries_frameworks/API%20wrappers/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>List of Python API Wrappers - My Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#list-of-python-api-wrappers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="My Notes" class="md-header__button md-logo" aria-label="My Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              List of Python API Wrappers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="white"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="white"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../ai_ml/" class="md-tabs__link">
+        
+  
+    
+  
+  AI/ML
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../" class="md-tabs__link">
+        
+  
+    
+  
+  Languages
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../data_architecture/" class="md-tabs__link">
+        
+  
+    
+  
+  Data Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../container/" class="md-tabs__link">
+        
+  
+    
+  
+  Container
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../version_control/" class="md-tabs__link">
+        
+  
+    
+  
+  Version Control
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../projects/" class="md-tabs__link">
+        
+  
+    
+  
+  Projects
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../api/" class="md-tabs__link">
+        
+  
+    
+  
+  API
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../os/" class="md-tabs__link">
+        
+  
+    
+  
+  OS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../cloud_ecosystems/" class="md-tabs__link">
+        
+  
+    
+  
+  Cloud Ecosystem
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://ronakr14.github.io" class="md-tabs__link">
+        
+  
+    
+  
+  Portfolio
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="My Notes" class="md-nav__button md-logo" aria-label="My Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My Notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ai_ml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI/ML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Languages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../data_architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../container/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Container
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../version_control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Version Control
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../os/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloud_ecosystems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cloud Ecosystem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://ronakr14.github.io" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Portfolio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="list-of-python-api-wrappers">List of Python API Wrappers</h1>
+<p>Hi. Below you will find a list of web services along with links to their docs and Python wrappers/libraries.</p>
+<h3 id="3taps-data-exchange"><a href="https://3taps.com/">3taps</a> - Data Exchange</h3>
+<ul>
+<li><a href="http://docs.3taps.com/">API Documentation</a></li>
+<li><a href="https://github.com/mkolodny/3taps">Python wrapper for 3taps</a></li>
+</ul>
+<h3 id="alexa-web-web-traffic-data"><a href="http://www.alexa.com/">Alexa Web</a> - Web traffic data</h3>
+<ul>
+<li><a href="http://docs.aws.amazon.com/AlexaWebInfoService/latest/">API Documentation</a></li>
+<li><a href="https://github.com/muhuk/python-awis">Python wrapper for Alexa Web</a></li>
+</ul>
+<h3 id="amazon-online-shopping"><a href="http://www.amazon.com/">Amazon</a> - Online Shopping</h3>
+<ul>
+<li><a href="http://docs.aws.amazon.com/AWSECommerceService/latest/DG/Welcome.html">API Documentation</a></li>
+<li><a href="https://github.com/yoavaviram/python-amazon-simple-product-api">Python wrapper for Amazon.com</a></li>
+</ul>
+<h3 id="amazon-product-api-amazons-product-catalog"><a href="http://docs.aws.amazon.com/AWSECommerceService/latest/DG/Welcome.html">Amazon Product API</a> - Amazon's product catalog</h3>
+<ul>
+<li><a href="http://docs.aws.amazon.com/AWSECommerceService/latest/DG/CHAP_ApiReference.html">API Documentation</a></li>
+<li><a href="https://github.com/asherAgs/amzSear">Python wrapper</a></li>
+</ul>
+<h3 id="amazon-s3-cloud-storage"><a href="https://aws.amazon.com/s3/">Amazon S3</a> - Cloud storage</h3>
+<ul>
+<li><a href="https://aws.amazon.com/documentation/s3/">API Documentation</a></li>
+<li><a href="https://github.com/jpetrucciani/bucketstore">Python wrapper</a></li>
+</ul>
+<h3 id="amazon-sqs-managed-queue-service"><a href="https://aws.amazon.com/sqs/">Amazon SQS</a> - Managed Queue Service</h3>
+<ul>
+<li><a href="https://aws.amazon.com/documentation/sqs/">API Documentation</a></li>
+<li><a href="https://github.com/jpetrucciani/qoo">Python wrapper</a></li>
+</ul>
+<h3 id="aws-cloud-computing-platform"><a href="http://aws.amazon.com">AWS</a> - Cloud computing platform</h3>
+<ul>
+<li><a href="http://aws.amazon.com/documentation/">API Documentation</a></li>
+<li><a href="https://github.com/boto/boto3">Python wrapper for AWS</a></li>
+</ul>
+<h3 id="aws-amazon-simple-workflow-orchestration-service-for-building-scalable-distributed-applications"><a href="http://aws.amazon.com/swf/">AWS - Amazon Simple Workflow</a> - Orchestration service for building scalable distributed applications</h3>
+<ul>
+<li><a href="http://aws.amazon.com/documentation/swf/">API Documentation</a></li>
+<li><a href="http://github.com/xethorn/garcon">Python wrapper for Amazon Simple Workflow</a></li>
+</ul>
+<h3 id="american-fuzzy-lop-afl-fuzzer-that-employs-genetic-algorithms-in-order-to-efficiently-increase-code-coverage-of-the-test-cases"><a href="http://lcamtuf.coredump.cx/afl/">American Fuzzy Lop / AFL</a> - Fuzzer that employs genetic algorithms in order to efficiently increase code coverage of the test cases</h3>
+<ul>
+<li><a href="http://lcamtuf.coredump.cx/afl/">API Documentation</a></li>
+<li><a href="https://github.com/shellphish/fuzzer">Python wrapper</a></li>
+</ul>
+<h3 id="archiveis-time-capsule-for-web-pages"><a href="http://archive.is/">Archive.is</a> - time capsule for web pages</h3>
+<ul>
+<li><a href="http://mementoweb.org/depot/native/archiveis/">API Documentation</a></li>
+<li><a href="https://github.com/pastpages/archiveis">Python wrapper</a></li>
+</ul>
+<h3 id="archiveorg-internet-archive"><a href="http://archive.org/">Archive.org</a> - Internet Archive</h3>
+<ul>
+<li><a href="http://archive.org/help/json.php">API Documentation</a></li>
+<li><a href="https://pypi.python.org/pypi/internetarchive">Python wrapper for archive.org</a></li>
+</ul>
+<h3 id="arista-eos-network-operating-system"><a href="https://www.arista.com/en/products/eos">Arista EOS</a> - Network Operating System</h3>
+<ul>
+<li><a href="http://aristanetworks.github.io/EosSdk/docs/1.6.0/ref/">API Documentation</a></li>
+<li><a href="https://github.com/arista-eosplus/pyeapi">Python wrapper</a></li>
+</ul>
+<h3 id="ark-blockchain-solutions"><a href="https://ark.io/">ARK</a> - Blockchain Solutions</h3>
+<ul>
+<li><a href="https://github.com/Highjhacker/pythark">API Documentation</a></li>
+<li><a href="https://github.com/Highjhacker/pythark">Python wrapper</a></li>
+<li><a href="https://blog.ark.io/pythark-python-api-wrapper-for-ark-f90d632a5a0e">Blog Post</a></li>
+</ul>
+<h3 id="arrayfire-high-performance-library-for-parallel-computing"><a href="http://arrayfire.com/">ArrayFire</a> - high performance library for parallel computing</h3>
+<ul>
+<li><a href="http://www.arrayfire.com/docs/index.htm">API Documentation</a></li>
+<li><a href="https://github.com/arrayfire/arrayfire-python">Python wrapper</a></li>
+</ul>
+<h3 id="ascribe-register-and-license-intellectual-property"><a href="https://www.ascribe.io">Ascribe</a> - Register and License Intellectual Property</h3>
+<ul>
+<li><a href="http://docs.ascribe.apiary.io">API Documentation</a></li>
+<li><a href="https://pypi.python.org/pypi/ascribe/0.0.7.dev1">Python wrapper</a></li>
+</ul>
+<h3 id="authorizenet-payment-gateway"><a href="https://www.authorize.net/">Authorize.net</a> - Payment gateway</h3>
+<ul>
+<li><a href="https://developer.authorize.net/api/">API Documentation</a></li>
+<li><a href="http://authorize-sauce.readthedocs.io/en/latest/">Python wrapper</a></li>
+</ul>
+<h3 id="azure-cloud-computing-platform"><a href="https://azure.microsoft.com/">Azure</a> - Cloud computing platform</h3>
+<ul>
+<li><a href="https://azure.microsoft.com/en-us/develop/python/">API Documentation</a></li>
+<li><a href="https://github.com/Azure/azure-sdk-for-python">Python wrapper</a></li>
+</ul>
+<h3 id="backblaze-cloud-backup-and-storage-provider"><a href="https://www.backblaze.com/">Backblaze</a> - cloud backup and storage provider</h3>
+<ul>
+<li><a href="https://www.backblaze.com/b2/docs/">API Documentation</a></li>
+<li><a href="https://github.com/sibblegp/b2blaze">Python wrapper</a></li>
+</ul>
+<h3 id="balanced-payments-for-marketplaces"><a href="http://www.balancedpayments.com">Balanced</a> - Payments for Marketplaces</h3>
+<ul>
+<li><a href="https://docs.balancedpayments.com/current/api">API Documentation</a></li>
+<li><a href="https://github.com/balanced/balanced-python">Python wrapper for Balanced</a></li>
+</ul>
+<h3 id="bearersh-api-integrations-platform"><a href="http://www.bearer.sh">Bearer.sh</a> - API integrations platform</h3>
+<ul>
+<li><a href="https://docs.bearer.sh/integration-clients/python">API Documentation</a></li>
+<li><a href="https://github.com/Bearer/bearer-python">Python wrapper</a></li>
+</ul>
+<h3 id="bigml-machine-learning-made-easy"><a href="https://bigml.com/">BigML</a> - Machine Learning Made Easy</h3>
+<ul>
+<li><a href="https://bigml.com/developers">API Documentation</a></li>
+<li><a href="https://github.com/bigmlcom/python">Python wrapper for BigML</a></li>
+</ul>
+<h3 id="bing-microsoft-search-engine"><a href="http://www.bing.com">Bing</a> - Microsoft search engine</h3>
+<ul>
+<li><a href="http://www.bing.com/dev/en-us/dev-center">API Documentation</a></li>
+<li><a href="https://code.google.com/p/pybing/">Python wrapper for Bing search</a></li>
+</ul>
+<h3 id="bitcoin-open-source-p2p-money"><a href="http://www.bitcoin.com/">Bitcoin</a> - Open source P2P money</h3>
+<ul>
+<li><a href="https://en.bitcoin.it/wiki/API_reference_(JSON-RPC)#Python">API Documentation</a></li>
+<li><a href="https://github.com/laanwj/bitcoin-python">Python wrapper for Bitcoin</a></li>
+</ul>
+<h3 id="bitly-url-shortener"><a href="http://www.bitly.com/">Bitly</a> - URL shortener</h3>
+<ul>
+<li><a href="http://dev.bitly.com/get_started.html">API Documentation</a></li>
+<li><a href="https://github.com/bitly/bitly-api-python">Python wrapper for bit.ly</a></li>
+</ul>
+<h3 id="bitstamp-buy-and-sell-bitcoins"><a href="https://www.bitstamp.net/">Bitstamp</a> - Buy and sell bitcoins</h3>
+<ul>
+<li><a href="https://www.bitstamp.net/api/">API Documentation</a></li>
+<li><a href="https://github.com/unwitting/bitstampy">Python wrapper for Bitstamp</a></li>
+</ul>
+<h3 id="blogger-blog-publishing-service"><a href="http://blogger.com/">Blogger</a> - Blog-publishing service</h3>
+<ul>
+<li><a href="https://developers.google.com/blogger/">API Documentation</a></li>
+<li><a href="http://code.google.com/p/python-blogger/">Python wrapper for Blogger</a></li>
+</ul>
+<h3 id="box-online-file-sharing"><a href="https://www.box.com/">Box</a> - Online file sharing</h3>
+<ul>
+<li><a href="http://developers.box.com/">API Documentation</a></li>
+<li><a href="https://github.com/box/box-python-sdk">Python wrapper for Box</a></li>
+</ul>
+<h3 id="braintree-accept-payments-online"><a href="https://www.braintreepayments.com/">Braintree</a> - Accept Payments Online</h3>
+<ul>
+<li><a href="https://www.braintreepayments.com/developers">API Documentation</a></li>
+<li><a href="https://github.com/braintree/braintree_python">Python wrapper for Braintree</a></li>
+</ul>
+<h3 id="buildkite-continuous-integration"><a href="https://www.buildkite.com/">Buildkite</a> - Continuous Integration</h3>
+<ul>
+<li><a href="https://buildkite.com/docs/apis/rest-api">API Documentation</a></li>
+<li><a href="https://github.com/pyasi/pybuildkite">Python wrapper for Buildkite</a></li>
+</ul>
+<h3 id="carriots-m2m-application-platform"><a href="https://www.carriots.com">Carriots</a> - M2M Application Platform</h3>
+<ul>
+<li><a href="https://www.carriots.com/documentation/api">API Documentation</a></li>
+<li><a href="https://github.com/sdeancos/clicarriots">Python wrapper for Carriots</a></li>
+</ul>
+<h3 id="challonge-tournament-brackets"><a href="https://challonge.com">Challonge</a> - Tournament Brackets</h3>
+<ul>
+<li><a href="https://challonge.com/api">API Documentation</a></li>
+<li><a href="https://github.com/ZEDGR/pychal">Python wrapper for Challonge</a></li>
+</ul>
+<h3 id="chargify-recurring-billing-application"><a href="http://chargify.com">Chargify</a> - Recurring billing application</h3>
+<ul>
+<li><a href="http://docs.chargify.com/api-introduction">API Documentation</a></li>
+<li><a href="https://github.com/hindsightlabs/chargify-python">Python wrapper for Chargify</a></li>
+</ul>
+<h3 id="closeio-sales-communication-platform"><a href="http://close.io">Close.io</a> - Sales communication platform</h3>
+<ul>
+<li><a href="http://developer.close.io">API Documentation</a></li>
+<li><a href="https://github.com/elasticsales/closeio-api/">Python wrapper for Close.io</a></li>
+</ul>
+<h3 id="coinbase-bitcoin-wallet"><a href="https://www.coinbase.com">Coinbase</a> - Bitcoin Wallet</h3>
+<ul>
+<li><a href="https://coinbase.com/api/doc.html">API Documentation</a></li>
+<li><a href="https://github.com/sibblegp/coinbase_python">Python wrapper for Coinbase</a></li>
+</ul>
+<h3 id="coinpayments-checkout-system-for-cryptocurrencies"><a href="https://www.coinpayments.net/">CoinPayments</a> - checkout system for cryptocurrencies</h3>
+<ul>
+<li><a href="https://www.coinpayments.net/apidoc">API Documentation</a></li>
+<li><a href="https://github.com/DogFive/pyCoinPayments">Python wrapper</a></li>
+</ul>
+<h3 id="countries-country-information"><a href="https://restcountries.eu/#rest-countries">Countries</a> - Country Information</h3>
+<ul>
+<li><a href="https://restcountries.eu/#api-endpoints">API Documentation</a></li>
+<li><a href="https://github.com/leonkozlowski/python-countries">Python wrapper for REST Countries</a></li>
+</ul>
+<h3 id="craigslist-classified-advertisements"><a href="http://www.craigslist.org/">Craigslist</a> - Classified advertisements</h3>
+<ul>
+<li><a href="https://github.com/juliomalegria/python-craigslist">API Documentation</a></li>
+<li><a href="https://github.com/juliomalegria/python-craigslist">Python wrapper</a></li>
+</ul>
+<h3 id="delicious-social-bookmarking-service"><a href="http://www.delicious.com">Delicious</a> - Social bookmarking service</h3>
+<ul>
+<li><a href="https://delicious.com/help/api">API Documentation</a></li>
+<li><a href="http://www.xml.com/pub/a/2004/11/10/delicious.html">Python wrapper for Del.icio.us</a></li>
+</ul>
+<h3 id="discogs-marketplace-for-music-on-vinyl-cd"><a href="http://www.discogs.com">Discogs</a> - Marketplace for Music on Vinyl, CD..</h3>
+<ul>
+<li><a href="http://www.discogs.com/developers/">API Documentation</a></li>
+<li><a href="https://github.com/discogs/discogs_client">Python wrapper for Discogs</a></li>
+</ul>
+<h3 id="discord-all-in-one-voice-and-text-chat-for-gamers"><a href="https://discordapp.com/">Discord</a> - All-in-one voice and text chat for gamers</h3>
+<ul>
+<li><a href="https://discordapp.com/developers">API Documentation</a></li>
+<li><a href="https://github.com/Rapptz/discord.py">Python wrapper for Discord</a></li>
+</ul>
+<h3 id="discourse-civilized-discussion"><a href="http://www.discourse.org/">Discourse</a> - Civilized discussion</h3>
+<ul>
+<li><a href="https://meta.discourse.org/t/discourse-api-documentation/22706">API Documentation</a></li>
+<li><a href="https://github.com/bennylope/pydiscourse">Python wrapper</a></li>
+</ul>
+<h3 id="disqus-blog-comment-hosting-service"><a href="http://www.disqus.com/">Disqus</a> - Blog comment hosting service</h3>
+<ul>
+<li><a href="http://disqus.com/api/docs/">API Documentation</a></li>
+<li><a href="https://github.com/disqus/disqus-python">Python Wrapper for Disqus</a></li>
+</ul>
+<h3 id="docker-an-open-platform-for-distributed-applications-for-developers-and-sysadmins"><a href="https://www.docker.com/">Docker</a> - an open platform for distributed applications for developers and sysadmins</h3>
+<ul>
+<li><a href="https://docker-py.readthedocs.io/en/stable/">API Documentation</a></li>
+<li><a href="https://github.com/docker/docker-py">Python Wrapper</a></li>
+</ul>
+<h3 id="dribbble-community-for-showcasing-user-made-artwork"><a href="https://dribbble.com/">Dribbble</a> - community for showcasing user-made artwork</h3>
+<ul>
+<li><a href="http://developer.dribbble.com/">API Documentation</a></li>
+<li><a href="https://github.com/Zabanaa/jabbbar">Python Wrapper</a></li>
+</ul>
+<h3 id="dropbox-file-hosting-service"><a href="http://www.dropbox.com">Dropbox</a> - File hosting service</h3>
+<ul>
+<li><a href="https://www.dropbox.com/developers">API Documentation</a></li>
+<li><a href="https://github.com/dropbox/dropbox-sdk-python">Python Wrapper for Dropbox</a></li>
+</ul>
+<h3 id="duktape-embeddable-javascript-engine"><a href="http://duktape.org/">Duktape</a> - Embeddable JavaScript engine</h3>
+<ul>
+<li><a href="http://duktape.org/api.html">API Documentation</a></li>
+<li><a href="https://github.com/stefano/pyduktape">Python Wrapper</a></li>
+</ul>
+<h3 id="ebay-online-auction-and-shopping"><a href="http://www.ebay.com/">Ebay</a> - Online auction and shopping</h3>
+<ul>
+<li><a href="http://developer.ebay.com/common/api/">API Documentation</a></li>
+<li><a href="https://github.com/roopeshvaddepally/python-ebay">Python wrapper for eBay API</a></li>
+</ul>
+<h3 id="embedly-front-end-developer-tools"><a href="http://embed.ly/">Embedly</a> - Front-end developer tools</h3>
+<ul>
+<li><a href="http://embed.ly/docs/embed/api/endpoints/1/oembed">API Documentation</a></li>
+<li><a href="https://github.com/embedly/embedly-python">Python wrapper for Embedly</a></li>
+</ul>
+<h3 id="evernote-notetaking-software"><a href="http://www.evernote.com/">Evernote</a> - Notetaking software</h3>
+<ul>
+<li><a href="http://dev.evernote.com/doc/">API Documentation</a></li>
+<li><a href="https://github.com/evernote/evernote-sdk-python">Python Wrapper for Evernote</a></li>
+</ul>
+<h3 id="expedia-a-travel-website"><a href="https://www.expedia.com/">Expedia</a> - A travel website</h3>
+<ul>
+<li><a href="http://developer.expedia.com/directory">API Documentation</a></li>
+<li><a href="https://github.com/NimitS1/expediaRequester">Python Wrapper for Expedia</a></li>
+</ul>
+<h3 id="facebook-social-networking-service"><a href="http://www.facebook.com/">Facebook</a> - Social networking service</h3>
+<ul>
+<li><a href="https://developers.facebook.com/">API Documentation</a></li>
+<li><a href="https://github.com/sciyoshi/pyfacebook/">Python wrapper for Facebook</a></li>
+</ul>
+<h3 id="fedex-global-courier-delivery-services"><a href="http://www.fedex.com/">FedEx</a> - Global courier delivery services</h3>
+<ul>
+<li><a href="http://www.fedex.com/us/developer/">API Documentation</a></li>
+<li><a href="https://github.com/gtaylor/python-fedex/">Python wrapper for FedEx</a></li>
+</ul>
+<h3 id="flickr-image-and-video-hosting"><a href="http://www.flickr.com">Flickr</a> - Image and Video hosting</h3>
+<ul>
+<li><a href="http://www.flickr.com/services/api/">API Documentation</a></li>
+<li><a href="https://github.com/michaelhelmick/python-flickr">Python wrapper #1</a></li>
+<li><a href="http://stuvel.eu/media/flickrapi-docs/documentation/">Python wrapper #2</a></li>
+</ul>
+<h3 id="forecast-weather-forecasting"><a href="http://forecast.io/">Forecast</a> - Weather forecasting</h3>
+<ul>
+<li><a href="https://developer.forecast.io/docs/v2">API Documentation</a></li>
+<li><a href="https://github.com/ZeevG/python-forecast.io">Python wrapper for Forecast</a></li>
+</ul>
+<h3 id="foursquare-location-based-networking"><a href="https://www.foursquare.com/">Foursquare</a> - Location based networking</h3>
+<ul>
+<li><a href="https://developer.foursquare.com/">API Documentation</a></li>
+<li><a href="https://github.com/mLewisLogic/foursquare">Python wrapper for Foursquare</a></li>
+</ul>
+<h3 id="fullcontact-manage-your-contacts"><a href="https://www.fullcontact.com/">FullContact</a> - Manage your contacts</h3>
+<ul>
+<li><a href="https://www.fullcontact.com/developer/">API Documentation</a></li>
+<li><a href="https://github.com/garbados/fullcontact.py">Python wrapper for FullContact</a></li>
+</ul>
+<h3 id="genius-song-lyrics-and-annotations"><a href="http://genius.com/">Genius</a> - Song lyrics and annotations</h3>
+<ul>
+<li><a href="https://docs.genius.com/">API Documentation</a></li>
+<li><a href="https://github.com/johnwmillr/LyricsGenius">Python wrapper for Genius</a></li>
+</ul>
+<h3 id="geocodio-ridiculously-affordable-geocoding"><a href="https://geocod.io/">Geocodio</a> - Ridiculously affordable geocoding</h3>
+<ul>
+<li><a href="https://geocod.io/docs/">API Documentation</a></li>
+<li><a href="https://github.com/bennylope/pygeocodio">Python wrapper for Geocodio</a></li>
+</ul>
+<h3 id="geopy-geocoding-for-python"><a href="http://code.google.com/p/geopy/wiki/GettingStarted">Geopy</a> - Geocoding for Python</h3>
+<ul>
+<li><a href="http://code.google.com/p/geopy/">API Documentation</a></li>
+<li><a href="http://code.google.com/p/geopy/">Python wrapper for Geopy</a></li>
+</ul>
+<h3 id="github-online-project-hosting"><a href="https://github.com/">GitHub</a> - Online project hosting</h3>
+<ul>
+<li><a href="http://developer.github.com/">API Documentation</a></li>
+<li><a href="http://github3py.readthedocs.org/en/latest/">Python wrapper for GitHub</a></li>
+</ul>
+<h3 id="gitlab-online-and-self-hosted-git-repository-management"><a href="https://gitlab.com/">GitLab</a> - Online and self-hosted Git repository management</h3>
+<ul>
+<li><a href="https://docs.gitlab.com/ce/api/">API Documentation</a></li>
+<li><a href="https://github.com/gpocentek/python-gitlab">Python wrapper for Gitlab</a></li>
+</ul>
+<h3 id="gmail-web-based-e-mail-service"><a href="https://developers.google.com/gmail/">Gmail</a> -  Web-based e-mail service</h3>
+<ul>
+<li><a href="https://developers.google.com/gmail/api/">API Documentation</a></li>
+<li><a href="https://pypi.org/project/EZGmail/">Python wrapper</a></li>
+</ul>
+<h3 id="google-charts-interactive-charts-for-browsers-and-mobile-devices"><a href="https://developers.google.com/chart/">Google Charts</a> - Interactive charts for browsers and mobile devices</h3>
+<ul>
+<li><a href="https://developers.google.com/chart/interactive/docs/">API Documentation</a></li>
+<li><a href="https://github.com/Dfenestrator/GooPyCharts">Python wrapper</a></li>
+</ul>
+<h3 id="google-cloud-functions-serverless-environment-to-build-and-connect-cloud-services"><a href="https://cloud.google.com/functions/">Google Cloud Functions</a> - Serverless environment to build and connect cloud services</h3>
+<ul>
+<li><a href="https://cloud.google.com/functions/docs/apis">API Documentation</a></li>
+<li><a href="https://github.com/MartinSahlen/cloud-functions-python">Python wrapper</a></li>
+</ul>
+<h3 id="google-drive-file-storage-service"><a href="https://www.google.com/drive/">Google Drive</a> - File storage service</h3>
+<ul>
+<li><a href="https://developers.google.com/drive/api/v3/reference/">API Documentation</a></li>
+<li><a href="https://github.com/nurdtechie98/drive-cli">Python wrapper</a></li>
+</ul>
+<h3 id="google-maps-web-mapping-service"><a href="http://maps.google.com/">Google Maps</a> - Web mapping service</h3>
+<ul>
+<li><a href="https://developers.google.com/maps/">API Documentation</a></li>
+<li><a href="http://code.google.com/p/pymaps/">Python wrapper for Google Maps</a></li>
+</ul>
+<h3 id="google-music-google-music"><a href="http://music.google.com/">Google Music</a> - Google Music</h3>
+<ul>
+<li><a href="http://unofficial-google-music-api.readthedocs.org/en/latest/">API Documentation</a></li>
+<li><a href="https://github.com/simon-weber/Unofficial-Google-Music-API">Python wrapper for Google Music</a></li>
+</ul>
+<h3 id="google-search-unofficial-api-for-google-search"><a href="https://www.google.com/">Google Search</a> - Unofficial API for Google Search</h3>
+<ul>
+<li><a href="https://github.com/aviaryan/python-gsearch">API Documentation</a></li>
+<li><a href="https://github.com/aviaryan/python-gsearch">Python wrapper</a></li>
+</ul>
+<h3 id="google-sheets-create-and-edit-spreadsheets-online-for-free"><a href="https://www.google.com/sheets/about/">Google Sheets</a> - create and edit spreadsheets online, for free.</h3>
+<ul>
+<li><a href="https://developers.google.com/sheets/">API Documentation</a></li>
+<li><a href="https://github.com/nithinmurali/pygsheets">Python wrapper</a></li>
+</ul>
+<h3 id="google-spreadsheet-online-spreadsheets"><a href="https://docs.google.com/spreadsheet/">Google Spreadsheet</a> - Online Spreadsheets</h3>
+<ul>
+<li><a href="https://developers.google.com/google-apps/spreadsheets/">API Documentation</a></li>
+<li><a href="https://github.com/burnash/gspread">Python wrapper for Google Spreadsheet</a></li>
+</ul>
+<h3 id="google-translate-translation-service"><a href="https://translate.google.com/">Google Translate</a> - Translation Service</h3>
+<ul>
+<li><a href="https://cloud.google.com/translate/docs">API Documentation</a></li>
+<li><a href="http://py-googletrans.readthedocs.org/en/latest/googletrans.html">Python wrapper for Google Translate</a></li>
+</ul>
+<h3 id="gopro-cameras"><a href="https://gopro.com">GoPro</a> - cameras</h3>
+<ul>
+<li><a href="https://github.com/konradit/gopro-py-api">API Documentation</a></li>
+<li><a href="https://github.com/konradit/gopro-py-api">Python wrapper</a></li>
+</ul>
+<h3 id="hacker-news-social-news"><a href="https://news.ycombinator.com/">Hacker News</a> - Social News</h3>
+<ul>
+<li><a href="https://github.com/HackerNews/API">API Documentation</a></li>
+<li><a href="https://github.com/avinassh/haxor/">Python wrapper for Hacker News</a></li>
+</ul>
+<h3 id="hadoop-yarn-apache-hadoop-nextgen-mapreduce-yarn"><a href="http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html">Hadoop YARN</a> - Apache Hadoop NextGen MapReduce (YARN)</h3>
+<ul>
+<li><a href="http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/WebServicesIntro.html">API Documentation</a></li>
+<li><a href="https://pypi.python.org/pypi/yarn-api-client">Python wrapper for Hadoop YARN</a></li>
+</ul>
+<h3 id="heroku-cloud-application-platform"><a href="https://www.heroku.com/">Heroku</a> - Cloud Application Platform</h3>
+<ul>
+<li><a href="https://devcenter.heroku.com/articles/platform-api-reference">API Documentation</a></li>
+<li><a href="https://pypi.python.org/pypi/heroku">Python wrapper for Heroku</a></li>
+</ul>
+<h3 id="highrise-contact-management-tool-crm"><a href="https://highrisehq.com/">Highrise</a> - Contact management tool (CRM)</h3>
+<ul>
+<li><a href="https://github.com/basecamp/highrise-api">API Documentation</a></li>
+<li><a href="https://github.com/feedmagnet/pyrise">Python wrapper for Highrise</a></li>
+</ul>
+<h3 id="hipchat-hosted-group-chat-and-im"><a href="https://www.hipchat.com/">HipChat</a> - Hosted group chat and IM</h3>
+<ul>
+<li><a href="https://www.hipchat.com/docs/api">API Documentation</a></li>
+<li><a href="https://github.com/dobarkod/hipchat-api">Python wrapper for HipChat</a></li>
+</ul>
+<h3 id="hubspot-marketing-sales-and-crm-software"><a href="https://www.hubspot.com/">HubSpot</a> - Marketing, Sales, and CRM software</h3>
+<ul>
+<li><a href="https://developers.hubspot.com/docs/overview">API Documentation</a></li>
+<li><a href="https://github.com/jpetrucciani/hubspot3">Python wrapper for HubSpot</a></li>
+</ul>
+<h3 id="iex-real-time-and-historical-stock-prices"><a href="https://iextrading.com/">IEX</a> - Real-time and historical stock prices</h3>
+<ul>
+<li><a href="https://iextrading.com/developer/docs">API Documentation</a></li>
+<li><a href="https://github.com/addisonlynch/iexfinance">Python wrapper for IEX</a></li>
+<li><a href="https://github.com/AlgoTraders/stock-analysis-engine">Python backtesting engine with IEX Cloud support to train AI to make future price predictions</a></li>
+</ul>
+<h3 id="ifixit-the-free-repair-manual"><a href="http://www.ifixit.com/">iFixit</a> - The free repair manual</h3>
+<ul>
+<li><a href="https://www.ifixit.com/api/2.0/doc">API Documentation</a></li>
+<li><a href="https://github.com/xiongchiamiov/pyfixit">Python wrapper for iFixit</a></li>
+</ul>
+<h3 id="iformbuilder-mobile-data-collection-software"><a href="https://www.zerionsoftware.com/iformbuilder">iFormBuilder</a> - Mobile Data Collection Software</h3>
+<ul>
+<li><a href="https://iformbuilder.docs.apiary.io">API Documentation</a></li>
+<li><a href="https://github.com/jhsu98/ifb-wrapper">Python wrapper for iFormBuilder</a></li>
+</ul>
+<h3 id="ihackernews-hacker-news-mobile"><a href="http://www.ihackernews.com/">iHackernews</a> - Hacker News Mobile</h3>
+<ul>
+<li><a href="http://api.ihackernews.com/">API Documentation</a></li>
+<li><a href="https://github.com/dmpayton/python-ihackernews">Python wrapper for iHackerNews</a></li>
+</ul>
+<h3 id="imgur-simple-image-sharer"><a href="http://www.imgur.com/">Imgur</a> - Simple Image Sharer</h3>
+<ul>
+<li><a href="http://api.imgur.com/">API Documentation</a></li>
+<li><a href="https://github.com/Damgaard/PyImgur">Python wrapper for Imgur</a></li>
+</ul>
+<h3 id="indeed-search-engine-for-jobs"><a href="http://www.Indeed.com">Indeed</a> - Search engine for jobs</h3>
+<ul>
+<li><a href="http://www.indeed.com/jsp/apiinfo.jsp">API Documentation</a></li>
+<li><a href="https://github.com/fission6/python-indeed">Python wrapper for indeed.com</a></li>
+</ul>
+<h3 id="instagram-online-photo-sharing"><a href="http://www.instagram.com">Instagram</a> - Online photo sharing</h3>
+<ul>
+<li><a href="http://instagram.com/developer/">API Documentation</a></li>
+<li><a href="https://github.com/Instagram/python-instagram">Python wrapper for Instagram</a></li>
+</ul>
+<h3 id="intercom-marketing-and-customer-support"><a href="https://www.intercom.com">Intercom</a> - Marketing and Customer support</h3>
+<ul>
+<li><a href="https://developers.intercom.com/intercom-api-reference/reference">API Documentation</a></li>
+<li><a href="https://github.com/intercom/python-intercom">Python wrapper for Intercom</a></li>
+</ul>
+<h3 id="investopedia-stock-simulator"><a href="http://www.investopedia.com/simulator/">Investopedia</a> - Stock Simulator</h3>
+<ul>
+<li><a href="http://www.investopedia.com/simulator/">API Documentation</a></li>
+<li><a href="https://github.com/kirkthaker/investopedia-trading-api">Python wrapper</a></li>
+</ul>
+<h3 id="ip-street-patent-data-and-analytics-algorithms-as-a-service"><a href="http://www.ipstreet.com/">IP Street</a> - patent data and analytics algorithms as a service</h3>
+<ul>
+<li><a href="http://docs.ipstreet.com/">API Documentation</a></li>
+<li><a href="https://github.com/IPStreet/PythonSDK">Python wrapper</a></li>
+</ul>
+<h3 id="itunes-store-search-engine-for-itunes-content"><a href="http://www.apple.com/itunes/">iTunes Store</a> - Search engine for iTunes content</h3>
+<ul>
+<li><a href="https://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web-service-search-api.html">API Documentation</a></li>
+<li><a href="https://github.com/spaceisstrange/itunespy">Python wrapper for iTunes Store</a></li>
+</ul>
+<h3 id="jira-issue-tracking-product"><a href="https://www.atlassian.com/software/jira">Jira</a> - Issue tracking product</h3>
+<ul>
+<li><a href="http://jira.readthedocs.io/en/latest/">API Documentation</a></li>
+<li><a href="https://github.com/pycontribs/jira">Python wrapper for Jira</a></li>
+</ul>
+<h3 id="kite-connect-stock-trading-apis"><a href="https://kite.trade/">Kite Connect</a> - Stock trading APIs</h3>
+<ul>
+<li><a href="https://kite.trade/docs/connect/v1/">API Documentation</a></li>
+<li><a href="https://github.com/rainmattertech/pykiteconnect">Python wrapper for Kite Connect</a></li>
+</ul>
+<h3 id="lastfm-online-music"><a href="http://www.last.fm">Last.fm</a> - Online music</h3>
+<ul>
+<li><a href="http://www.last.fm/api">API Documentation</a></li>
+<li><a href="http://code.google.com/p/python-lastfm/">Python wrapper for Last.fm</a></li>
+</ul>
+<h3 id="lightgbm-gradient-boosting-framework-by-microsoft"><a href="https://github.com/Microsoft/LightGBM">LightGBM</a> - gradient boosting framework by Microsoft</h3>
+<ul>
+<li><a href="https://github.com/Microsoft/LightGBM">API Documentation</a></li>
+<li><a href="https://github.com/ArdalanM/pyLightGBM">Python wrapper</a></li>
+</ul>
+<h3 id="linkedin-professional-social-network"><a href="http://linkedin.com/">LinkedIn</a> - Professional Social Network</h3>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/linkedin/">API Documentation</a></li>
+<li><a href="https://github.com/tomquirk/linkedin-api">Python wrapper #1</a></li>
+<li><a href="https://github.com/ozgur/python-linkedin">Python wrapper #2</a></li>
+<li><a href="https://github.com/michaelhelmick/linkedin">Python wrapper #3</a></li>
+</ul>
+<h3 id="loggly-cloud-based-logging"><a href="http://loggly.com/">Loggly</a> - Cloud-based logging</h3>
+<ul>
+<li><a href="http://loggly.com/support/advanced/extending-loggly">API Documentation</a></li>
+<li><a href="https://github.com/loggly/hoover">Python wrapper for Loggly</a></li>
+</ul>
+<h3 id="medium-blog-publishing-platform"><a href="https://medium.com/">Medium</a> - blog publishing platform</h3>
+<ul>
+<li><a href="https://github.com/enginebai/PyMedium">API Documentation</a></li>
+<li><a href="https://github.com/enginebai/PyMedium">Python wrapper</a></li>
+</ul>
+<h3 id="meetup-offline-group-meetings"><a href="http://www.meetup.com/">Meetup</a> - Offline group meetings</h3>
+<ul>
+<li><a href="http://www.meetup.com/meetup_api/">API Documentation</a></li>
+<li><a href="https://github.com/meetup/python-api-client">Python wrapper for Meetup Web</a></li>
+</ul>
+<h3 id="mega-free-cloud-storage"><a href="https://mega.co.nz">Mega</a> - Free cloud storage</h3>
+<ul>
+<li><a href="https://mega.co.nz/#developers">API Documentation</a></li>
+<li><a href="https://github.com/juanriaza/python-mega">Python wrapper for Mega</a></li>
+</ul>
+<h3 id="mercury-take-any-web-article-and-return-only-the-relevant-content"><a href="https://mercury.postlight.com/web-parser/">Mercury</a> - take any web article and return only the relevant content</h3>
+<ul>
+<li><a href="https://mercury.postlight.com/web-parser/">API Documentation</a></li>
+<li><a href="https://github.com/kennethreitz/mercury-parser">Python wrapper</a></li>
+</ul>
+<h3 id="metwit-social-and-crowdsourced-weather"><a href="http://metwit.com/">Metwit</a> - Social and crowdsourced weather</h3>
+<ul>
+<li><a href="http://metwit.com/weather-api/">API Documentation</a></li>
+<li><a href="http://soup.metwit.com/post/45997437810/python-weather-by-metwit">Python wrapper for Metwit</a></li>
+</ul>
+<h3 id="mixcloud-social-music-streaming"><a href="https://www.mixcloud.com/">Mixcloud</a> - Social music streaming</h3>
+<ul>
+<li><a href="https://www.mixcloud.com/developers/">API Documentation</a></li>
+<li><a href="https://github.com/amikrop/aiomixcloud">Python wrapper</a></li>
+</ul>
+<h3 id="mlb-gameday-real-time-mlb-data"><a href="http://gd2.mlb.com/components/game/mlb/">MLB GameDay</a> - Real-time MLB data</h3>
+<ul>
+<li><a href="http://panzarino.me/mlbgame/">API Documentation</a></li>
+<li><a href="https://github.com/zachpanz88/mlbgame">Python wrapper</a></li>
+</ul>
+<h3 id="monkeylearn-machine-learning-for-text-analysis"><a href="http://www.monkeylearn.com/">MonkeyLearn</a> - Machine Learning for Text Analysis</h3>
+<ul>
+<li><a href="http://docs.monkeylearn.com/article/api-reference/">API Documentation</a></li>
+<li><a href="https://github.com/monkeylearn/monkeylearn-python">Python wrapper</a></li>
+</ul>
+<h3 id="musixmatch-explore-the-worlds-largest-catalog-of-song-lyrics-and-translations"><a href="https://www.musixmatch.com/">Musixmatch</a> - Explore the world's largest catalog of song lyrics and translations</h3>
+<ul>
+<li><a href="https://developer.musixmatch.com/">API Documentation</a></li>
+<li><a href="https://github.com/hudsonbrendon/python-musixmatch">Python wrapper for Musixmatch</a></li>
+</ul>
+<h3 id="nasa-national-aeronautics-and-space-administration"><a href="http://www.nasa.gov/">NASA</a> - National Aeronautics and Space Administration</h3>
+<ul>
+<li><a href="https://data.nasa.gov/developer">API Documentation</a></li>
+<li><a href="https://github.com/emirozer/bowshock">Python wrapper for NASA</a></li>
+</ul>
+<h3 id="nba-stats-nba-advanced-stats"><a href="https://stats.nba.com/">NBA Stats</a> - NBA Advanced Stats</h3>
+<ul>
+<li><a href="https://github.com/swar/nba_api/blob/master/docs/table_of_contents.md">API Documentation</a></li>
+<li><a href="https://github.com/swar/nba_api">Python wrapper</a></li>
+</ul>
+<h3 id="netflix-on-demand-streaming-media"><a href="http://www.netflix.com/">Netflix</a> - On-demand streaming media</h3>
+<ul>
+<li><a href="http://developer.netflix.com/">API Documentation</a></li>
+<li><a href="https://github.com/jcopenha/pyflix">Python wrapper for Netflix</a></li>
+</ul>
+<h3 id="netflix-roulette-get-a-random-movie-from-the-netflix-catalog-and-watch-it-instantly"><a href="http://netflixroulette.net/">Netflix Roulette</a> - Get a random movie from the Netflix catalog and watch it instantly</h3>
+<ul>
+<li><a href="http://netflixroulette.net/api/">API Documentation</a></li>
+<li><a href="https://github.com/tizz98/netflix_roulette">Python wrapper</a></li>
+</ul>
+<h3 id="new-york-times-archive-api-the-archive-api-provides-json-lists-of-articles-by-month"><a href="https://developer.nytimes.com/archive_api.json">New York Times Archive API</a> - The Archive API provides JSON lists of articles by month</h3>
+<ul>
+<li><a href="https://developer.nytimes.com/archive_api.json">API Documentation</a></li>
+<li><a href="https://github.com/davidcox143/nytimesarchive">Python wrapper</a></li>
+</ul>
+<h3 id="news-api-json-api-for-live-news-and-blog-headlines"><a href="https://newsapi.org/">News API</a> - JSON API for live news and blog headlines</h3>
+<ul>
+<li><a href="https://newsapi.org/docs">API Documentation</a></li>
+<li><a href="https://github.com/mattlisiv/newsapi-python">Python wrapper</a></li>
+</ul>
+<h3 id="onetimesecret-self-destructing-messaging-service"><a href="https://onetimesecret.com/">OneTimeSecret</a> - Self-destructing messaging service</h3>
+<ul>
+<li><a href="https://onetimesecret.com/docs/api">API Documentation</a></li>
+<li><a href="https://github.com/utter-step/py_onetimesecret">Python wrapper for OneTimeSecret</a></li>
+</ul>
+<h3 id="onfleet-last-mile-delivery-management-service"><a href="https://onfleet.com/">Onfleet</a> - Last mile delivery management service</h3>
+<ul>
+<li><a href="https://docs.onfleet.com/">API Documentation</a></li>
+<li><a href="https://github.com/onfleet/pyonfleet">Python wrapper</a></li>
+</ul>
+<h3 id="openweathermap-weather-service"><a href="http://openweathermap.org/">OpenWeatherMap</a> - Weather Service</h3>
+<ul>
+<li><a href="http://openweathermap.org/api">API Documentation</a></li>
+<li><a href="https://github.com/csparpa/pyowm">Python wrapper for OpenWeatherMap</a></li>
+</ul>
+<h3 id="pagerduty-it-alert-monitoring"><a href="http://pagerduty.com/">PagerDuty</a> - IT alert monitoring</h3>
+<ul>
+<li><a href="http://developer.pagerduty.com/documentation/integration/events">API Documentation</a></li>
+<li><a href="https://github.com/dropbox/pygerduty">Python Wrapper for PagerDuty</a></li>
+</ul>
+<h3 id="peercoin-open-source-p2p-money"><a href="https://peercoin.net">Peercoin</a> - Open source P2P money</h3>
+<ul>
+<li><a href="https://docs.peercoin.net/#/json-rpc-api-reference">API Documentation</a></li>
+<li><a href="https://github.com/peercoin/peercoin_rpc">JSON-RPC API Python wrapper</a></li>
+</ul>
+<h3 id="pinterest-pinboard-style-sharing"><a href="http://pinterest.com/">Pinterest</a> - Pinboard-style sharing</h3>
+<ul>
+<li><a href="http://developers.pinterest.com/">API Documentation</a></li>
+<li><a href="https://github.com/ironchief/python-pinterest">Python wrapper for Pinterest</a></li>
+</ul>
+<h3 id="pixoto-online-photo-sharing-platform"><a href="http://pixoto.com/">Pixoto</a> - Online photo sharing platform</h3>
+<ul>
+<li><a href="https://github.com/daxeel/pypixoto">API Documentation</a></li>
+<li><a href="https://github.com/daxeel/pypixoto">Python wrapper for Pixoto</a></li>
+</ul>
+<h3 id="phaxio-faxing-for-developers"><a href="https://www.phaxio.com/">Phaxio</a> - Faxing for Developers</h3>
+<ul>
+<li><a href="http://www.phaxio.com/docs">API Documentation</a></li>
+<li><a href="https://github.com/phaxio">Python wrapper for Phaxio</a></li>
+</ul>
+<h3 id="phishai-detect-zero-day-phishing-websites"><a href="https://www.phish.ai/">Phish.AI</a> - Detect zero-day phishing websites</h3>
+<ul>
+<li><a href="https://app.phish.ai/#/documentation">API Documentation</a></li>
+<li><a href="https://github.com/phishai/phish-ai-api">Python wrapper</a></li>
+</ul>
+<h3 id="photobucket-image-hosting-and-video"><a href="http://photobucket.com/">Photobucket</a> - Image hosting and video</h3>
+<ul>
+<li><a href="http://developer.photobucket.com/">API Documentation</a></li>
+<li><a href="https://github.com/czpython/python-photobucket">Python wrapper for Photobucket</a></li>
+</ul>
+<h3 id="plotly-easily-analyze-data-together"><a href="https://plot.ly/">Plot.ly</a> - Easily analyze data together</h3>
+<ul>
+<li><a href="https://plot.ly/api/">API Documentation</a></li>
+<li><a href="https://plot.ly/api/python/">Python wrapper for Plot.ly</a></li>
+</ul>
+<h3 id="polar-devices-watches-and-devices"><a href="http://www.polar.com">Polar Devices</a> - Watches and devices</h3>
+<ul>
+<li><a href="http://developer.polar.com/wiki/AccessLink">API Documentation</a></li>
+<li><a href="https://github.com/rsc-dev/loophole">Python wrapper</a></li>
+</ul>
+<h3 id="pubmed-database-of-medical-publications"><a href="https://www.ncbi.nlm.nih.gov/pubmed/">PubMed</a> - database of medical publications</h3>
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/tools/developers/">API Documentation</a></li>
+<li><a href="https://github.com/gijswobben/pymed">Python wrapper</a></li>
+</ul>
+<h3 id="rackspace-open-cloud-company"><a href="http://www.rackspace.com/">Rackspace</a> - Open cloud company</h3>
+<ul>
+<li><a href="http://docs.rackspace.com/sdks/guide/content/python.html">API Documentation</a></li>
+<li><a href="https://github.com/rackspace/pyrax">Python wrapper for the Rackspace Cloud</a></li>
+</ul>
+<h3 id="reddit-social-news-aggregation-and-discussion"><a href="http://www.reddit.com/">Reddit</a> - Social news aggregation and discussion</h3>
+<ul>
+<li><a href="http://www.reddit.com/dev/api">API Documentation</a></li>
+<li><a href="https://github.com/praw-dev/praw/">Python wrapper for Reddit</a></li>
+</ul>
+<h3 id="rottentomatoes-film-review-aggregator"><a href="http://rottentomatoes.com/">RottenTomatoes</a> - Film review aggregator</h3>
+<ul>
+<li><a href="http://developer.rottentomatoes.com/">API Documentation</a></li>
+<li><a href="https://github.com/zachwill/rottentomatoes">Python wrapper for Rotten Tomatoes</a></li>
+</ul>
+<h3 id="salesforce-cloud-computing-company-crm"><a href="http://www.salesforce.com/">Salesforce</a> - Cloud computing company (CRM)</h3>
+<ul>
+<li><a href="http://www.salesforce.com/us/developer/docs/api/index.htm">API Documentation</a></li>
+<li><a href="https://pypi.python.org/pypi/beatbox">Python wrapper for Salesforce</a></li>
+</ul>
+<h3 id="sas-business-intelligence-software"><a href="https://www.sas.com">SAS</a> - business intelligence software</h3>
+<ul>
+<li><a href="https://sassoftware.github.io/saspy/overview.html">API Documentation</a></li>
+<li><a href="https://github.com/sassoftware/saspy">Python Wrapper</a></li>
+</ul>
+<h3 id="scaleway-cloud-computing-platform"><a href="https://scaleway.com">Scaleway</a> - Cloud computing platform</h3>
+<ul>
+<li><a href="https://developer.scaleway.com">API Documentation</a></li>
+<li><a href="https://github.com/scaleway/python-scaleway">Python wrapper for Scaleway</a></li>
+</ul>
+<h3 id="scrapinghub-scraping-services"><a href="http://scrapinghub.com/">Scrapinghub</a> - Scraping services</h3>
+<ul>
+<li><a href="http://doc.scrapinghub.com/api.html">API Documentation</a></li>
+<li><a href="https://github.com/scrapinghub/python-scrapinghub">Python wrapper for Scrapinghub</a></li>
+</ul>
+<h3 id="sendgrid-email-api-for-developers"><a href="https://sendgrid.com/">SendGrid</a> - Email API for developers</h3>
+<ul>
+<li><a href="https://sendgrid.com/docs/for-developers/sending-email/api-getting-started/">API Documentation</a></li>
+<li><a href="https://github.com/sendgrid/sendgrid-python">Python wrapper</a></li>
+</ul>
+<h3 id="shodan-search-engine-for-internet-connected-devices"><a href="https://www.shodan.io/">Shodan</a> - Search engine for Internet-connected devices</h3>
+<ul>
+<li><a href="https://developer.shodan.io/">API Documentation</a></li>
+<li><a href="https://github.com/achillean/shodan-python">Python wrapper</a></li>
+</ul>
+<h3 id="skyscanner-travel-metasearch"><a href="http://www.skyscanner.net/">Skyscanner</a> - Travel metasearch</h3>
+<ul>
+<li><a href="http://business.skyscanner.net/portal/en-GB/Documentation/ApiOverview">API Documentation</a></li>
+<li><a href="https://github.com/Skyscanner/skyscanner-python-sdk">Python wrapper for Skyscanner</a></li>
+</ul>
+<h3 id="slack-team-communication-platform"><a href="https://slack.com/">Slack</a> - Team Communication Platform</h3>
+<ul>
+<li><a href="https://api.slack.com/">API Documentation</a></li>
+</ul>
+<h4 id="python-wrappers">Python Wrappers</h4>
+<ul>
+<li><a href="https://github.com/os/slacker">Slacker</a></li>
+<li><a href="https://github.com/nficano/gendo">Gendo</a></li>
+</ul>
+<h3 id="slideshare-slide-hosting-service"><a href="https://www.slideshare.net/">Slideshare</a> - Slide hosting service</h3>
+<ul>
+<li><a href="http://www.slideshare.net/developers/documentation">API Documentation</a></li>
+<li><a href="http://code.google.com/p/pyslideshare/">Python wrapper for slideshare</a></li>
+</ul>
+<h3 id="smartfile-file-management-service"><a href="https://smartfile.com/">SmartFile</a> - File management service</h3>
+<ul>
+<li><a href="http://app.smartfile.com/api/">API Documentation</a></li>
+<li><a href="https://github.com/smartfile/client-python">Python wrapper for SmartFile</a></li>
+</ul>
+<h3 id="socrata-open-data-api-data-discovery-for-government-data"><a href="http://www.socrata.com/">Socrata Open Data API</a> - Data discovery for government data</h3>
+<ul>
+<li><a href="http://dev.socrata.com/">API Documentation</a></li>
+<li><a href="https://github.com/xmunoz/sodapy">Python wrapper for Socrata Open Data API</a></li>
+</ul>
+<h3 id="soundcloud-share-your-sounds"><a href="http://www.soundcloud.com/">Soundcloud</a> - Share your sounds</h3>
+<ul>
+<li><a href="http://developers.soundcloud.com/">API Documentation</a></li>
+<li><a href="https://github.com/soundcloud/soundcloud-python">Python wrapper for Soundcloud</a></li>
+</ul>
+<h3 id="sportradar-broad-range-of-sports-apis"><a href="https://developer.sportradar.com/">Sportradar</a> - Broad range of sports APIs</h3>
+<ul>
+<li><a href="https://developer.sportradar.com/io-docs">API Documentation</a></li>
+<li><a href="https://github.com/johnwmillr/SportradarAPIs">Python wrapper for Sportradar</a></li>
+</ul>
+<h3 id="spotify-music-streaming-service"><a href="https://spotify.com/">Spotify</a> - Music streaming service</h3>
+<ul>
+<li><a href="https://developer.spotify.com/documentation/">API Documentation</a></li>
+<li><a href="https://github.com/plamere/spotipy">Python wrapper for Spotify</a></li>
+</ul>
+<h3 id="spreedly-cloud-based-credit-card-vault"><a href="https://spreedly.com/">Spreedly</a> - Cloud based credit card vault</h3>
+<ul>
+<li><a href="https://core.spreedly.com/manual/quickstart">API Documentation</a></li>
+<li><a href="https://github.com/ridgebit/python-spreedly">Python wrapper for Spreedly</a></li>
+</ul>
+<h3 id="stack-exchange-community-powered-qa"><a href="http://www.stackexchange.com">Stack Exchange</a> - Community-Powered Q&amp;A</h3>
+<ul>
+<li><a href="https://api.stackexchange.com/docs">API Documentation</a></li>
+<li><a href="https://pypi.python.org/pypi/stackpy">Python wrapper for Stack Exchange</a></li>
+</ul>
+<h3 id="stanford-corenlp-simple-api-for-text-processing-tasks"><a href="https://stanfordnlp.github.io/CoreNLP/">Stanford CoreNLP</a> - simple API for text processing tasks</h3>
+<ul>
+<li><a href="https://stanfordnlp.github.io/CoreNLP/">API Documentation</a></li>
+<li><a href="https://github.com/Lynten/stanford-corenlp">Python wrapper</a></li>
+</ul>
+<h3 id="stripe-payments-for-developers"><a href="https://stripe.com/">Stripe</a> - Payments for developers</h3>
+<ul>
+<li><a href="https://stripe.com/docs/api/python">API Documentation</a></li>
+<li><a href="https://github.com/stripe/stripe-python">Python wrapper for Stripe</a></li>
+</ul>
+<h3 id="sunlightfoundation-sunlight-foundation"><a href="http://www.sunlightfoundation.com/">SunlightFoundation</a> - Sunlight Foundation</h3>
+<ul>
+<li><a href="http://sunlightfoundation.com/api/">API Documentation</a></li>
+<li><a href="http://python-sunlight.readthedocs.org/en/latest/">Python wrapper for Sunlight Foundation</a></li>
+</ul>
+<h3 id="syncthing-decentralized-data-sync"><a href="https://syncthing.net/">Syncthing</a> - Decentralized data sync</h3>
+<ul>
+<li><a href="https://docs.syncthing.net/dev/rest.html">API Documentation</a></li>
+<li><a href="https://github.com/blakev/python-syncthing">Python wrapper for Syncthing</a></li>
+</ul>
+<h3 id="taiga-project-management"><a href="https://taiga.io/">Taiga</a> - Project management</h3>
+<ul>
+<li><a href="http://taigaio.github.io/taiga-doc/dist/api.html">API Documentation</a></li>
+<li><a href="https://github.com/nephila/python-taiga">Python wrapper</a></li>
+</ul>
+<h3 id="technorati-searching-blogs"><a href="http://technorati.com/">Technorati</a> - Searching blogs</h3>
+<ul>
+<li><a href="http://technorati.com/developers/">API Documentation</a></li>
+<li><a href="http://www.myelin.co.nz/technorati_py/">Python wrapper for Technorati</a></li>
+</ul>
+<h3 id="telegram-mobile-and-desktop-messaging-app"><a href="https://telegram.org/">Telegram</a> - Mobile and desktop messaging app</h3>
+<ul>
+<li><a href="https://core.telegram.org/bots/api">API Documentation</a></li>
+<li><a href="https://github.com/python-telegram-bot/python-telegram-bot">Python wrapper</a></li>
+</ul>
+<h3 id="temp-mail-anonymous-emails"><a href="https://temp-mail.ru">Temp Mail</a> - Anonymous emails</h3>
+<ul>
+<li><a href="http://api.temp-mail.ru/">API Documentation</a></li>
+<li><a href="https://github.com/saippuakauppias/temp-mail">Python wrapper for Temp mail</a></li>
+</ul>
+<h3 id="tesseract-ocr-ocr-engine"><a href="https://github.com/tesseract-ocr/tesseract">Tesseract OCR</a> - OCR Engine</h3>
+<ul>
+<li><a href="http://tesseract-ocr.github.io/">API Documentation</a></li>
+<li><a href="https://github.com/sirfz/tesserocr">Python wrapper</a></li>
+</ul>
+<h3 id="the-echo-nest-music-services"><a href="http://echonest.com">The Echo Nest</a> - Music services</h3>
+<ul>
+<li><a href="http://developer.echonest.com/client_libraries.html">API Documentation</a></li>
+<li><a href="https://github.com/echonest/pyechonest">Python Wrapper for Echo Nest</a></li>
+</ul>
+<h3 id="the-pirate-bay-peer-to-peer-file-sharing"><a href="http://thepiratebay.sx/">The Pirate Bay</a> - Peer-to-peer file sharing</h3>
+<ul>
+<li><a href="https://github.com/thekarangoel/TPB">API Documentation</a></li>
+<li><a href="https://github.com/thekarangoel/TPB">Python wrapper for TPB</a></li>
+</ul>
+<h3 id="the-movie-database-movie-and-tv-database"><a href="http://www.themoviedb.org">The Movie Database</a> - Movie and TV Database</h3>
+<h4 id="official-site">Official Site</h4>
+<ul>
+<li><a href="http://docs.themoviedb.apiary.io">API Documentation</a></li>
+<li><a href="https://www.themoviedb.org/documentation/api/wrappers-libraries">List of wrappers</a></li>
+</ul>
+<h4 id="wrappers">Wrappers</h4>
+<h5 id="easytmdb-020-python-package-index">easytmdb 0.2.0 : Python Package Index</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td>https://github.com/benregn/easytmdb</td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td>https://pypi.python.org/pypi/easytmdb/0.2.0</td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td></td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td></td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/09/07</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Observations and notes:</strong></p>
+<ul>
+<li><strong>2014/09/07:</strong></li>
+<li>based on tmdbsimple, with implementation changes (meanwhile already present in tmdbsimple)</li>
+</ul>
+<h5 id="themoviedb-themoviedborg-wrapper-for-api-v3">themoviedb themoviedb.org wrapper for api v3</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td>https://github.com/doganaydin/themoviedb</td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td></td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td></td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td></td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/10/17</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Observations and notes:</strong></p>
+<ul>
+<li><strong>2014/10/17:</strong></li>
+<li>supports API v3</li>
+<li>only movie search api is implemented.</li>
+</ul>
+<h5 id="themoviedb-python-wrapper-to-themoviedborg-api">themoviedb Python wrapper to themoviedb.org API</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td>https://github.com/doganaydin/themoviedb_oldapi</td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td></td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td></td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td></td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/10/17</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Observations and notes:</strong></p>
+<ul>
+<li><strong>2014/10/17:</strong></li>
+<li>deprecated</li>
+</ul>
+<h5 id="themoviedb-python-wrapper-to-themoviedborg-api_1">themoviedb  Python wrapper to themoviedb.org API</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td>https://github.com/dbr/themoviedb</td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td></td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td>v. 2.6, v. 2.7, v. 3.3</td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td>2013/05/31</td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/09/07</td>
+</tr>
+</tbody>
+</table>
+<h5 id="themoviedbbundle">TheMovieDB.bundle</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td>https://github.com/plexinc-agents/TheMovieDB.bundle</td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td></td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td></td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td>2014/07/27</td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/09/07</td>
+</tr>
+</tbody>
+</table>
+<h5 id="themoviedb-json-unofficial-themoviedborg-python-api-wrapper">[themoviedb-json] Unofficial themoviedb.org python api wrapper</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td>https://github.com/doganaydin/themoviedb-json</td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td></td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td></td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/09/07</td>
+</tr>
+</tbody>
+</table>
+<h5 id="tmdb-python-package-index">[tmdb] Python Package Index</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td></td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td>https://pypi.python.org/pypi/tmdb/1.0b</td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td>v.2.7, v.3</td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td>version 1.0b</td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/09/07</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Observations and notes:</strong>
+ + <strong>(2014/09/07)</strong>
+   - deprecated</p>
+<h5 id="tmdb-small-application-using-tmdb-apis">TMDB Small application using TMDB APIs</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td>https://github.com/codershoder/TMDB</td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td></td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td></td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td></td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/09/07</td>
+</tr>
+</tbody>
+</table>
+<h5 id="tmdbsimple-a-python-wrapper-for-the-movie-database-api-v3"><a href="https://github.com/celiao/tmdbsimple">tmdbsimple</a> - A Python wrapper for The Movie Database API v3</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td>https://github.com/celiao/tmdbsimple</td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td>https://pypi.python.org/pypi/tmdbsimple</td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td></td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td>version 1.0.0 (2014/09/22)</td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/09/07</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Observations and notes:</strong></p>
+<ul>
+<li><strong>2014/09/07:</strong></li>
+<li>simply maps API endpoints to Python functions</li>
+<li>supports v.3 of the API and the new Search/Multi endpoint</li>
+</ul>
+<h5 id="tmdb3-070-python-package-index">[tmdb3] 0.7.0 : Python Package Index</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td></td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td>https://pypi.python.org/pypi/tmdb3</td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td></td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td>version 0.7.0 (?/?/?)</td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/09/07</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tinyurl-url-shortner"><a href="http://www.tinyurl.com">TinyURL</a> - URL Shortner</h3>
+<ul>
+<li><a href="https://github.com/daxeel/TinyURL-Python">API Documentation</a></li>
+<li><a href="https://github.com/daxeel/TinyURL-Python">Python wrapper</a></li>
+</ul>
+<h3 id="trello-kanban-boards"><a href="https://trello.com/">Trello</a> - Kanban boards</h3>
+<ul>
+<li><a href="https://trello.com/docs/index.html">API Documentation</a></li>
+<li><a href="https://github.com/sarumont/py-trello">Python wrapper for Trello</a></li>
+</ul>
+<h3 id="tuenti-social-networking-service"><a href="https://www.tuenti.com">Tuenti</a> - Social networking service</h3>
+<ul>
+<li><a href="http://corporate.tuenti.com/en/dev">API Documentation</a></li>
+<li><a href="https://github.com/juanriaza/python-tuenti">Python wrapper for Tuenti</a></li>
+</ul>
+<h3 id="tumblr-microblogging-platform"><a href="http://www.tumblr.com">Tumblr</a> - Microblogging platform</h3>
+<ul>
+<li><a href="http://www.tumblr.com/docs/en/api/v2">API Documentation</a></li>
+<li><a href="https://github.com/tumblr/pytumblr">Python wrapper #1</a></li>
+<li><a href="https://github.com/michaelhelmick/python-tumblpy">Python wrapper #2</a></li>
+</ul>
+<h3 id="thetvdbcom-community-driven-database-of-television-shows"><a href="http://thetvdb.com">TheTVDB.com</a> - Community driven database of television shows</h3>
+<h4 id="official-site_1">Official Site</h4>
+<ul>
+<li><a href="http://www.thetvdb.com/wiki/index.php/Programmers_API">API Documentation</a></li>
+</ul>
+<h4 id="wrappers_1">Wrappers</h4>
+<h5 id="gnarlytvdb-a-python-interface-to-thetvdbcom-xml-api">gnarlytvdb: A python interface to thetvdb.com xml api</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td>https://github.com/steinitzu/gnarly-tvdb</td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td>https://pypi.python.org/pypi/gnarlytvdb/0.6</td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td></td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td>version 0.6 (2013/01/29)</td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/12/20</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Observations and notes:</strong></p>
+<ul>
+<li><strong>2014/12/20:</strong></li>
+<li>Does not implement actors and banners API</li>
+</ul>
+<h5 id="pytvdb-a-python-library-for-interacting-with-thetvdbcom-api">pytvdb: A python library for interacting with TheTVDB.com API</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td>https://bitbucket.org/arshsingh/pytvdb</td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td></td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td></td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td>(2014/08/19)</td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/12/20</td>
+</tr>
+</tbody>
+</table>
+<h5 id="pytvdb-a-python-module-for-the-thetvdbcom-api">PyTVDB: a Python module for the thetvdb.com API</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td>https://github.com/elderhsouza/PyTVDB</td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td></td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td></td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td>(2014/03/13)</td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/12/20</td>
+</tr>
+</tbody>
+</table>
+<h5 id="pytvdbapi-a-clean-resource-friendly-and-easy-to-use-api-for-thetvdbcom">pytvdbapi: A clean, resource friendly and easy to use API for thetvdb.com</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td>https://github.com/fuzzycode/pytvdbapi</td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td>https://pypi.python.org/pypi/pytvdbapi/0.5.0</td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td>v.2.6, v.2.7, v.3.3 and v.3.4</td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td>version 0.5.0 (2014/10/28)</td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/12/20</td>
+</tr>
+</tbody>
+</table>
+<h5 id="thetvdb_api-a-python-api-for-thetvdb">thetvdb_api: A Python API for theTVDB.</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td>https://bitbucket.org/Julien-D/thetvdb_api</td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td>https://pypi.python.org/pypi/thetvdb_api/0.3.1</td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td>v.2.7, v.3.2</td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td>version 0.3.1 (2014/02/10)</td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/12/20</td>
+</tr>
+</tbody>
+</table>
+<h5 id="tvdb-module-for-accessing-the-web-api-at-thetvdbcom">tvdb: Module for accessing the Web API at TheTVDB.com</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td></td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td>https://pypi.python.org/pypi/tvdb/0.22</td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td></td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td>version 0.22 (2009/02/20)</td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/12/20</td>
+</tr>
+</tbody>
+</table>
+<h5 id="tvdb-caching-api">TVDB Caching API</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td></td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td>https://bitbucket.org/robdennis/tvdb-caching-api</td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td></td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td>(2012/06/26)</td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/12/21</td>
+</tr>
+</tbody>
+</table>
+<h5 id="dbrtvdb_api-interface-to-thetvdbcom">dbr/tvdb_api: Interface to thetvdb.com</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td>http://github.com/dbr/tvdb_api/tree/master</td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td>https://pypi.python.org/pypi/tvdb_api/1.10</td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td>v.2.6, v.2.7, v.3.3 and v.3.4</td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td>version 1.10 (2014/11/08)</td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/12/20</td>
+</tr>
+</tbody>
+</table>
+<h5 id="fuzemantvdb_api">fuzeman/tvdb_api</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td>https://github.com/fuzeman/tvdb_api</td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td></td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td></td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td>(2012/11/07)</td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/12/21</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Observations and notes:</strong></p>
+<ul>
+<li><strong>2014/12/21:</strong></li>
+<li>This is a fork of version 1.8.1 of dbr/tvdb_api (https://github.com/dbr/tvdb_api/tree/master) recommended for use with TVDB Cache Server (https://github.com/fuzeman/tvdb-cache-server)</li>
+</ul>
+<h5 id="tvdbpy-yet-another-tvdb-api-python-wrapper-work-in-progress">tvdbpy: Yet another TvDB API Python wrapper. Work in progress.</h5>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>click</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Code</td>
+<td>https://github.com/matiasb/tvdbpy</td>
+</tr>
+<tr>
+<td>PyPI Page</td>
+<td></td>
+</tr>
+<tr>
+<td>Py Support</td>
+<td></td>
+</tr>
+<tr>
+<td>Last Update</td>
+<td>(2014/02/16)</td>
+</tr>
+<tr>
+<td>Info Date</td>
+<td>2014/12/20</td>
+</tr>
+</tbody>
+</table>
+<h3 id="twilio-sms-and-voice-through-the-cloud"><a href="http://twilio.com/">Twilio</a> - SMS and Voice through the cloud</h3>
+<ul>
+<li><a href="https://www.twilio.com/docs/python/install">API Documentation</a></li>
+<li><a href="https://github.com/twilio/twilio-python/">Python wrapper for Twilio</a></li>
+</ul>
+<h3 id="twitter-online-microblogging-service"><a href="http://twitter.com/">Twitter</a> - Online microblogging service</h3>
+<ul>
+<li><a href="https://dev.twitter.com/docs/twitter-libraries">API Documentation</a></li>
+<li><a href="https://github.com/bear/python-twitter/">Python wrapper #1</a> - python-twitter</li>
+<li><a href="https://github.com/ryanmcgrath/twython">Python wrapper #2</a> - Twython</li>
+<li><a href="https://github.com/inueni/birdy">Python wrapper #3</a> - birdy</li>
+<li><a href="https://github.com/tweepy/tweepy">Python wrapper #4</a> - tweepy</li>
+</ul>
+<h3 id="uber-taxi-private-car-or-rideshare-service"><a href="https://www.uber.com/">Uber</a> - Taxi, private car or rideshare service</h3>
+<ul>
+<li><a href="https://developer.uber.com/v1/endpoints/">API Documentation</a></li>
+<li><a href="https://github.com/vivangkumar/uberpy">Python wrapper for Uber</a></li>
+</ul>
+<h3 id="udacity-online-university"><a href="https://www.udacity.com">Udacity</a> - Online University</h3>
+<ul>
+<li><a href="https://www.udacity.com/catalog-api">API Documentation</a></li>
+<li><a href="https://github.com/tylucaskelley/udacity-api-python">Python wrapper for Udacity</a></li>
+</ul>
+<h3 id="udemy-online-university"><a href="https://www.udemy.com">Udemy</a> - Online University</h3>
+<ul>
+<li><a href="https://www.udemy.com/developers/">API Documentation</a></li>
+<li><a href="https://github.com/hudsonbrendon/pyudemy">Python wrapper for Udemy</a></li>
+</ul>
+<h3 id="unirest-set-of-lightweight-http-libraries"><a href="http://unirest.io/">Unirest</a> - Set of lightweight HTTP libraries</h3>
+<ul>
+<li><a href="http://unirest.io/#python">API Documentation</a></li>
+<li><a href="https://github.com/Mashape/unirest-python">Python wrapper for Unirest</a></li>
+</ul>
+<h3 id="ups-package-delivery"><a href="http://www.ups.com">UPS</a> - Package Delivery</h3>
+<ul>
+<li><a href="https://www.ups.com/upsdeveloperkit">API Documentation</a></li>
+<li><a href="https://github.com/classicspecs/ClassicUPS">Python wrapper for UPS</a></li>
+</ul>
+<h3 id="urbandictionary-web-based-dictionary"><a href="http://www.urbandictionary.com">UrbanDictionary</a> - Web-based dictionary</h3>
+<ul>
+<li><a href="http://www.urbandictionary.com">API Documentation</a></li>
+<li><a href="https://github.com/novel/py-urbandict">Python wrapper for Urban Dictionary</a></li>
+</ul>
+<h3 id="vault-a-tool-for-managing-secrets"><a href="https://www.vaultproject.io/">Vault</a> - A tool for managing secrets.</h3>
+<ul>
+<li><a href="https://www.vaultproject.io/docs/http/index.html">API Documentation</a></li>
+<li><a href="https://github.com/ianunruh/hvac">Python wrapper for Vault</a></li>
+</ul>
+<h3 id="vimeo-video-sharing-website"><a href="https://vimeo.com/">Vimeo</a> - Video-sharing website</h3>
+<ul>
+<li><a href="http://developer.vimeo.com/apis/">API Documentation</a></li>
+<li><a href="https://github.com/rkumarnirmal/python-vimeo">Python wrapper for Vimeo</a></li>
+</ul>
+<h3 id="vk-social-networking-service"><a href="http://vk.com/">VK</a> - Social networking service</h3>
+<ul>
+<li><a href="https://vk.com/dev/methods">API Documentation</a></li>
+<li><a href="https://github.com/dimka665/vk">Python wrapper #1</a></li>
+<li><a href="https://github.com/python273/vk_api">Python wrapper #2</a></li>
+<li><a href="https://github.com/prostomarkeloff/vk.py">Fully asynchronous Python wrapper</a></li>
+</ul>
+<h3 id="walmart-open-api-access-to-the-walmart-product-catalog"><a href="https://github.com/caroso1222/wapy">Walmart Open API</a> - access to the Walmart product catalog</h3>
+<ul>
+<li><a href="https://developer.walmartlabs.com/">API Documentation</a></li>
+<li><a href="https://github.com/caroso1222/wapy">Python wrapper</a></li>
+</ul>
+<h3 id="whatsapp-mobile-and-desktop-messaging-app"><a href="https://www.whatsapp.com/">WhatsApp</a> -  Mobile and desktop messaging app</h3>
+<ul>
+<li>~~API Documentation~~</li>
+<li><a href="https://github.com/tgalal/yowsup">Python wrapper</a></li>
+</ul>
+<h3 id="wikipedia-wikipedia"><a href="http://www.wikipedia.org/">Wikipedia</a> - Wikipedia</h3>
+<ul>
+<li><a href="http://www.mediawiki.org/wiki/API">API Documentation</a></li>
+<li><a href="http://github.com/goldsmith/Wikipedia">Python wrapper 1</a></li>
+<li><a href="https://github.com/martin-majlis/Wikipedia-API/">Python wrapper 2</a></li>
+</ul>
+<h3 id="windows-azure-microsofts-cloud-platform"><a href="http://www.windowsazure.com/">Windows Azure</a> - Microsoft's Cloud Platform</h3>
+<ul>
+<li><a href="http://www.windowsazure.com/en-us/develop/python/">API Documentation</a></li>
+<li><a href="https://github.com/WindowsAzure/azure-sdk-for-python">Python wrapper for Windows Azure</a></li>
+</ul>
+<h3 id="world-bank-collection-of-development-indicators"><a href="http://data.worldbank.org/indicator">World Bank</a> - Collection of development indicators</h3>
+<ul>
+<li><a href="http://wbpy.readthedocs.org/en/latest/">API Documentation</a></li>
+<li><a href="https://github.com/mattduck/wbpy">Python wrapper for World Bank</a></li>
+</ul>
+<h3 id="world-weather-weather-service"><a href="http://www.worldweatheronline.com/">World Weather</a> - Weather Service</h3>
+<ul>
+<li><a href="http://developer.worldweatheronline.com">API Documentation</a></li>
+<li><a href="https://github.com/WorldWeatherOnline/pywwo">Python wrapper for World Weather</a></li>
+</ul>
+<h3 id="woocommerce-ecommerce"><a href="http://www.woothemes.com/woocommerce/">WooCommerce</a> - Ecommerce</h3>
+<ul>
+<li><a href="http://docs.woothemes.com/document/woocommerce-rest-api/">API Documentation</a></li>
+<li><a href="https://github.com/woothemes/wc-api-python">Python wrapper for WooCommerce</a></li>
+</ul>
+<h3 id="wordnik-online-dictionary"><a href="http://www.wordnik.com">Wordnik</a> - Online dictionary</h3>
+<ul>
+<li><a href="http://developer.wordnik.com">API Documentation</a></li>
+<li><a href="https://github.com/wordnik/wordnik-python">Python wrapper for Wordnik</a></li>
+</ul>
+<h3 id="wunderlist-task-management-application"><a href="https://www.wunderlist.com/">Wunderlist</a> - Task Management Application</h3>
+<ul>
+<li><a href="https://developer.wunderlist.com/documentation">API Documentation</a></li>
+<li><a href="https://github.com/mieubrisse/wunderpy2">Python wrapper</a></li>
+</ul>
+<h3 id="yahoo-web-portal-search-engine"><a href="http://www.yahoo.com">Yahoo</a> - Web portal, search engine</h3>
+<ul>
+<li><a href="http://developer.yahoo.com/python/python-rest.html">API Documentation</a></li>
+<li><a href="http://code.google.com/p/python-weather-api/">Python wrapper for Yahoo</a></li>
+</ul>
+<h3 id="yahoo-query-language-sql-like-query-language"><a href="https://developer.yahoo.com/yql">Yahoo Query Language</a> - SQL-like query language</h3>
+<ul>
+<li><a href="https://developer.yahoo.com/yql/guide/">API Documentation</a></li>
+<li><a href="https://myql.readthedocs.org/en/latest/">Python wrapper for Yahoo Query Language</a></li>
+</ul>
+<h3 id="yelp-local-search-website"><a href="http://www.yelp.com">Yelp</a> - Local search website</h3>
+<ul>
+<li><a href="http://www.yelp.com/developers/documentation">API Documentation</a></li>
+<li><a href="https://github.com/mathisonian/python-yelp-v2">Python wrapper for Yelp</a></li>
+</ul>
+<h3 id="you-need-a-budget-ynab-personal-budgeting-software"><a href="http://www.youneedabudget.com/">You Need a Budget (YNAB)</a> - Personal budgeting software</h3>
+<ul>
+<li><a href="https://github.com/aldanor/pynab">Python wrapper for YNAB</a></li>
+</ul>
+<h3 id="youtube-video-sharing-website"><a href="http://www.youtube.com">YouTube</a> - Video-sharing website</h3>
+<ul>
+<li><a href="https://developers.google.com/youtube/">API Documentation</a></li>
+<li><a href="https://pypi.python.org/pypi/youtube-api-wrapper/0.2">Python wrapper for YouTube</a></li>
+</ul>
+<h3 id="zoop-payment-gateway"><a href="https://zoop.com.br/">Zoop</a> - Payment Gateway</h3>
+<ul>
+<li><a href="https://docs.zoop.co/docs">API Documentation</a></li>
+<li><a href="https://pypi.org/project/zoop-wrapper/">Python wrapper for Zoop</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://github.com/ronakr14"  target="_blank" rel="noopener">Ronak Rathore</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ronakr14" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ronakr14" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ronakr14" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ronakr14" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
