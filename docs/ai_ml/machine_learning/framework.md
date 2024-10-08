@@ -3,8 +3,8 @@
 ### Frameworks and Libraries
 <!-- MarkdownTOC depth=4 -->
 
-- [Awesome Machine Learning ![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](#awesome-machine-learning-)
-  - [Table of Contents](#table-of-contents)
+- [Awesome Machine Learning ![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](#awesome-machine-learning)
+  - Table of Contents
     - [Frameworks and Libraries](#frameworks-and-libraries)
     - [Tools](#tools)
   - [APL](#apl)
@@ -86,8 +86,8 @@
   - [OCaml](#ocaml)
     - [General-Purpose Machine Learning](#ocaml-general-purpose-machine-learning)
   - [OpenCV](#opencv)
-    - [Computer Vision](#opencv-Computer-Vision)
-    - [Text-Detection](#Text-Character-Number-Detection)
+    - Computer Vision
+    - Text-Detection
   - [Perl](#perl)
     - [Data Analysis / Data Visualization](#perl-data-analysis--data-visualization)
     - [General-Purpose Machine Learning](#perl-general-purpose-machine-learning)
@@ -134,13 +134,13 @@
   - [TensorFlow](#tensorflow)
       - [General-Purpose Machine Learning](#tensorflow-general-purpose-machine-learning)
 
-### [Tools](#tools-1)
+### Tools
 
 - [Neural Networks](#tools-neural-networks)
 - [Misc](#tools-misc)
 
 
-[Credits](#credits)
+Credits
 
 <!-- /MarkdownTOC -->
 

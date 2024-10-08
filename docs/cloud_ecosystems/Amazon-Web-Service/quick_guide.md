@@ -15,7 +15,6 @@ Amazon Web Services (AWS) is a comprehensive cloud computing platform provided b
 7. [Amazon ECS](#amazon-ecs)
 8. [Amazon CloudWatch](#amazon-cloudwatch)
 9. [AWS CLI](#aws-cli)
-10. [Examples](#examples)
 
 ---
 
