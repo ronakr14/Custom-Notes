@@ -1,119 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://ronakr14.github.io/Notes/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/blog/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/code_snippets/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/code_snippets/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/custom_libraries/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/custom_libraries/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/languages/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/application_programming_interface/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/projects/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/artificial_intelligence/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/blockchain/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/application_programming_interface/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/cloud_ecosystems/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/artificial_intelligence/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/data_architecture/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/blockchain/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/data_engineering/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/cloud_ecosystems/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/devops_gitops/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/data_architecture/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/ethical_hacking/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/data_engineering/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/languages/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/devops_gitops/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/languages/bash/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/ethical_hacking/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/languages/c%2B%2B/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/languages/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/languages/c-sharp/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/languages/bash/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/languages/c/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/languages/c/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/languages/css/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/languages/c%2B%2B/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/languages/html/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/languages/css/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/languages/java/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/languages/html/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/languages/javascript/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/languages/java/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/languages/markdown/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/languages/javascript/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/languages/python/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/languages/markdown/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/languages/scala/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/languages/python/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/operating_systems/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/languages/scala/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/quantum_computing/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/operating_systems/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/version_control_systems/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/quantum_computing/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/version_control_systems/bazaar/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
     <url>
-         <loc>https://ronakr14.github.io/Notes/tutorials/version_control_systems/</loc>
-         <lastmod>2024-10-13</lastmod>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/version_control_systems/bitbucket/</loc>
+         <lastmod>2025-01-26</lastmod>
+    </url>
+    <url>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/version_control_systems/cvs/</loc>
+         <lastmod>2025-01-26</lastmod>
+    </url>
+    <url>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/version_control_systems/git/</loc>
+         <lastmod>2025-01-26</lastmod>
+    </url>
+    <url>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/version_control_systems/github/</loc>
+         <lastmod>2025-01-26</lastmod>
+    </url>
+    <url>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/version_control_systems/gitlab/</loc>
+         <lastmod>2025-01-26</lastmod>
+    </url>
+    <url>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/version_control_systems/gitlens/</loc>
+         <lastmod>2025-01-26</lastmod>
+    </url>
+    <url>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/version_control_systems/mercurial/</loc>
+         <lastmod>2025-01-26</lastmod>
+    </url>
+    <url>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/version_control_systems/perforce/</loc>
+         <lastmod>2025-01-26</lastmod>
+    </url>
+    <url>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/version_control_systems/sourcetree/</loc>
+         <lastmod>2025-01-26</lastmod>
+    </url>
+    <url>
+         <loc>https://ronakr14.github.io/Custom-Notes/tutorials/version_control_systems/svn/</loc>
+         <lastmod>2025-01-26</lastmod>
     </url>
 </urlset>
