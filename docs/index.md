@@ -2,29 +2,6 @@
 
 Here, you'll find a comprehensive collection of resources covering key concepts, programming languages, libraries, tools, and frameworks. Additionally, this repository includes documentation for various mini projects, curated code snippets, and a list of custom libraries developed to simplify the use of integrated libraries.
 
-## [Mini Projects](projects/index.md)
-
-|#|Projects|#|Projects|#|Projects|#|Projects|
-|---|---|---|---|---|---|---|---|
-
-## [Tutorials](tutorials/index.md)
-
-|#|Concept|#|Concept|#|Concept|#|Concept|
-|---|---|---|---|---|---|---|---|
-|1.|[Programming Languages](tutorials/languages/index.md)|2.|[Artificial Intelligence](tutorials/artificial_intelligence/index.md)|3.|[Cloud Ecosystems](tutorials/cloud_ecosystems/index.md)|4.|[Data Architecture](tutorials/data_architecture/index.md)|
-|5.|[Data Engineering](tutorials/data_engineering/index.md)|6.|[Blockchain](tutorials/blockchain/index.md)|7.|[Ethical Hacking](tutorials/ethical_hacking/index.md)|8.|[DevOps and GitOps](tutorials/devops_gitops/index.md)|
-|9.|[Operating Systems](tutorials/operating_systems/index.md)|10.|[Version Control Systems](tutorials/version_control_systems/index.md)|11.|[Application Programming Interface](tutorials/application_programming_interface/index.md)|12.|[Quantum Computing](tutorials/quantum_computing/index.md)|
-
-## [Custom Libraris](custom_libraries/index.md)
-
-|#|Libraries|#|Libraries|#|Libraries|#|Libraries|
-|---|---|---|---|---|---|---|---|
-
-## [Code Snippets](code_snippets/index.md)
-
-|#|Concept|#|Concept|#|Concept|#|Concept|
-|---|---|---|---|---|---|---|---|
-
 <!-- 
 ## [Programming Languages](languages/index.md)
 Explore various programming languages, their syntax, features, and applications. This section includes notes on languages such as Python, Java, JavaScript, and more.

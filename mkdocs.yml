@@ -1,5 +1,5 @@
-site_name: My Notes
-site_url: https://ronakr14.github.io/Notes/
+site_name: Custom Notes
+site_url: https://ronakr14.github.io/Custom-Notes/
 theme:
   name: material
 
@@ -35,11 +35,23 @@ theme:
     - content.code.copy
 
 nav:
-  - Projects: projects/index.md
-  - Tutorials: tutorials/index.md
+  - Home: index.md
+  - Tutorials:
+    - Tutorials Home Page: tutorials/index.md
+    - Application Programming Interface: tutorials/application_programming_interface/index.md
+    - Artificial Intelligence: tutorials/artificial_intelligence/index.md
+    - Blockchain: tutorials/blockchain/index.md
+    - Cloud Ecosystems: tutorials/cloud_ecosystems/index.md
+    - Data Architecture: tutorials/data_architecture/index.md
+    - Data Engineering: tutorials/data_engineering/index.md
+    - DevOps & GitOps: tutorials/devops_gitops/index.md
+    - Ethical Hacking: tutorials/ethical_hacking/index.md
+    - Languages: tutorials/languages/index.md
+    - Operating Systems: tutorials/operating_systems/index.md
+    - Quantum Computing: tutorials/quantum_computing/index.md
+    - Version Control Systems: tutorials/version_control_systems/index.md
   - Custom Libraries: custom_libraries/index.md
   - Code Snippets: code_snippets/index.md
-  - Blogs: blog/index.md
   - Portfolio: https://ronakr14.github.io
   
 markdown_extensions:
@@ -76,11 +88,13 @@ extra:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/ronakr14
     - icon: fontawesome/brands/linkedin
-      link: https://github.com/ronakr14
+      link: https://linkedin.com/in/ronak-rathore05/
     - icon: fontawesome/brands/docker
-      link: https://github.com/ronakr14
+      link: https://hub.docker.com/u/rastar14
     - icon: fontawesome/brands/python
-      link: https://github.com/ronakr14
+      link: https://pypi.org/user/RonakR/
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/rastar14/
 
 copyright: |
-  &copy; 2024 <a href="https://github.com/ronakr14"  target="_blank" rel="noopener">Ronak Rathore</a>
+  &copy; 2024=5 <a href="https://github.com/ronakr14"  target="_blank" rel="noopener">Ronak Rathore</a>
