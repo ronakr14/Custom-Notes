@@ -1,1 +1,0 @@
-real time communication for event triggered actions
