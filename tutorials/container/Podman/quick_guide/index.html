@@ -8,28 +8,24 @@
       
       
       
-        <link rel="canonical" href="https://ronakr14.github.io/Custom-Notes/tutorials/data_architecture/">
+        <link rel="canonical" href="https://ronakr14.github.io/Custom-Notes/tutorials/container/Podman/quick_guide/">
       
       
-        <link rel="prev" href="../cloud_ecosystems/">
       
       
-        <link rel="next" href="../data_engineering/">
-      
-      
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
     
     
       
-        <title>Data Architecture - Custom Notes</title>
+        <title>Podman Tutorial - Custom Notes</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.a40c8224.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +44,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-database-and-data-warehouse-notes" class="md-skip">
+        <a href="#podman-tutorial" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +84,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Custom Notes" class="md-header__button md-logo" aria-label="Custom Notes" data-md-component="logo">
+    <a href="../../../.." title="Custom Notes" class="md-header__button md-logo" aria-label="Custom Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data Architecture
+              Podman Tutorial
             
           </span>
         </div>
@@ -205,7 +201,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
     
@@ -220,13 +216,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../" class="md-tabs__link">
           
   
     
@@ -244,7 +238,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../custom_libraries/" class="md-tabs__link">
+      <a href="../../../../custom_libraries/" class="md-tabs__link">
         
   
     
@@ -261,7 +255,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../code_snippets/" class="md-tabs__link">
+      <a href="../../../../code_snippets/" class="md-tabs__link">
         
   
     
@@ -314,7 +308,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Custom Notes" class="md-nav__button md-logo" aria-label="Custom Notes" data-md-component="logo">
+    <a href="../../../.." title="Custom Notes" class="md-nav__button md-logo" aria-label="Custom Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -332,7 +326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -349,10 +343,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -411,24 +403,21 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -439,13 +428,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Tutorials
@@ -461,7 +450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../application_programming_interface/" class="md-nav__link">
+      <a href="../../../application_programming_interface/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -482,7 +471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../artificial_intelligence/" class="md-nav__link">
+      <a href="../../../artificial_intelligence/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -503,7 +492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../blockchain/" class="md-nav__link">
+      <a href="../../../blockchain/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -524,7 +513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cloud_ecosystems/" class="md-nav__link">
+      <a href="../../../cloud_ecosystems/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -542,30 +531,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Data Architecture
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../data_architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -574,35 +543,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#contents" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contents
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -615,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data_engineering/" class="md-nav__link">
+      <a href="../../../data_engineering/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -636,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../devops_gitops/" class="md-nav__link">
+      <a href="../../../devops_gitops/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -657,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ethical_hacking/" class="md-nav__link">
+      <a href="../../../ethical_hacking/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -678,7 +618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../languages/" class="md-nav__link">
+      <a href="../../../languages/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -699,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operating_systems/" class="md-nav__link">
+      <a href="../../../operating_systems/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -720,7 +660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quantum_computing/" class="md-nav__link">
+      <a href="../../../quantum_computing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -741,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../version_control_systems/" class="md-nav__link">
+      <a href="../../../version_control_systems/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -769,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../custom_libraries/" class="md-nav__link">
+      <a href="../../../../custom_libraries/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -789,7 +729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_snippets/" class="md-nav__link">
+      <a href="../../../../code_snippets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -837,14 +777,146 @@
                   
 
 
-<h1 id="welcome-to-database-and-data-warehouse-notes">Welcome to Database and Data Warehouse notes.</h1>
-<h2 id="contents">Contents</h2>
-<ol>
-<li><a href="datawarehouse/">Data Warehouse</a></li>
-<li><a href="database/">Database Management Systems</a></li>
-<li><a href="sql/">SQL</a></li>
-<li><a href="nosql/">No SQL</a></li>
-</ol>
+<h1 id="podman-tutorial">Podman Tutorial</h1>
+<h2 id="overview">Overview</h2>
+<p>Podman is an open-source container management tool designed to be a drop-in replacement for Docker. It allows you to manage containers and pods without requiring a daemon.</p>
+<h2 id="installing-podman">Installing Podman</h2>
+<h3 id="on-linux">On Linux</h3>
+<p>To install Podman on a Linux system, use the package manager specific to your distribution:</p>
+<h4 id="debianubuntu">Debian/Ubuntu</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>podman
+</code></pre></div>
+<h4 id="fedora">Fedora</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>podman
+</code></pre></div>
+<h4 id="centosrhel">CentOS/RHEL</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>podman
+</code></pre></div>
+<h3 id="on-macos">On macOS</h3>
+<p>To install Podman on macOS, you can use Homebrew:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>brew<span class="w"> </span>install<span class="w"> </span>podman
+</code></pre></div>
+<h3 id="on-windows">On Windows</h3>
+<p>To install Podman on Windows, you can use the Podman Windows installer available from the <a href="https://github.com/containers/podman/releases">Podman releases page</a>.</p>
+<h2 id="basic-podman-commands">Basic Podman Commands</h2>
+<h3 id="1-podman-version">1. <code>podman --version</code></h3>
+<p>Check the installed Podman version.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>podman<span class="w"> </span>--version
+</code></pre></div>
+<h4 id="example">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>podman<span class="w"> </span>version<span class="w"> </span><span class="m">4</span>.0.0
+</code></pre></div>
+<h3 id="2-podman-pull">2. <code>podman pull</code></h3>
+<p>Download a container image from a registry.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>podman<span class="w"> </span>pull<span class="w"> </span>image_name
+</code></pre></div>
+<h4 id="example_1">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>podman<span class="w"> </span>pull<span class="w"> </span>nginx
+</code></pre></div>
+<h3 id="3-podman-images">3. <code>podman images</code></h3>
+<p>List all available container images on your system.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>podman<span class="w"> </span>images
+</code></pre></div>
+<h4 id="example_2">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>REPOSITORY<span class="w">          </span>TAG<span class="w">       </span>IMAGE<span class="w"> </span>ID<span class="w">       </span>CREATED<span class="w">       </span>SIZE
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>nginx<span class="w">               </span>latest<span class="w">    </span>f6b22f3dfc8f<span class="w">   </span><span class="m">2</span><span class="w"> </span>weeks<span class="w"> </span>ago<span class="w">   </span>133MB
+</code></pre></div>
+<h3 id="4-podman-rmi">4. <code>podman rmi</code></h3>
+<p>Remove a container image.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>podman<span class="w"> </span>rmi<span class="w"> </span>image_name
+</code></pre></div>
+<h4 id="example_3">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>podman<span class="w"> </span>rmi<span class="w"> </span>nginx
+</code></pre></div>
+<h3 id="5-podman-run">5. <code>podman run</code></h3>
+<p>Run a container from an image.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>podman<span class="w"> </span>run<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>image_name
+</code></pre></div>
+<h4 id="example_4">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>podman<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>-p<span class="w"> </span><span class="m">80</span>:80<span class="w"> </span>nginx
+</code></pre></div>
+<h3 id="6-podman-ps">6. <code>podman ps</code></h3>
+<p>List running containers.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>podman<span class="w"> </span>ps
+</code></pre></div>
+<h4 id="example_5">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>CONTAINER<span class="w"> </span>ID<span class="w">  </span>IMAGE<span class="w">     </span>COMMAND<span class="w">                  </span>CREATED<span class="w">         </span>STATUS<span class="w">         </span>PORTS<span class="w">                </span>NAMES
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>abcd1234efgh<span class="w">  </span>nginx<span class="w">     </span><span class="s2">&quot;nginx -g &#39;daemon of…&quot;</span><span class="w">   </span><span class="m">10</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">  </span>Up<span class="w"> </span><span class="m">10</span><span class="w"> </span>minutes<span class="w">  </span><span class="m">0</span>.0.0.0:80-&gt;80/tcp<span class="w">   </span>quizzical_hermann
+</code></pre></div>
+<h3 id="7-podman-stop">7. <code>podman stop</code></h3>
+<p>Stop a running container.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>podman<span class="w"> </span>stop<span class="w"> </span>container_id
+</code></pre></div>
+<h4 id="example_6">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>podman<span class="w"> </span>stop<span class="w"> </span>abcd1234efgh
+</code></pre></div>
+<h3 id="8-podman-rm">8. <code>podman rm</code></h3>
+<p>Remove a stopped container.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>podman<span class="w"> </span>rm<span class="w"> </span>container_id
+</code></pre></div>
+<h4 id="example_7">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>podman<span class="w"> </span>rm<span class="w"> </span>abcd1234efgh
+</code></pre></div>
+<h3 id="9-podman-exec">9. <code>podman exec</code></h3>
+<p>Execute a command inside a running container.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>podman<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>container_id<span class="w"> </span><span class="nb">command</span>
+</code></pre></div>
+<h4 id="example_8">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>podman<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>abcd1234efgh<span class="w"> </span>/bin/bash
+</code></pre></div>
+<h2 id="working-with-pods">Working with Pods</h2>
+<p>A Pod is a group of one or more containers that share the same network namespace.</p>
+<h3 id="1-podman-pod-create">1. <code>podman pod create</code></h3>
+<p>Create a new pod.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>podman<span class="w"> </span>pod<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>pod_name
+</code></pre></div>
+<h4 id="example_9">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>podman<span class="w"> </span>pod<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>my-pod
+</code></pre></div>
+<h3 id="2-podman-pod-ps">2. <code>podman pod ps</code></h3>
+<p>List all pods.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>podman<span class="w"> </span>pod<span class="w"> </span>ps
+</code></pre></div>
+<h4 id="example_10">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>POD<span class="w"> </span>ID<span class="w">        </span>NAME<span class="w">    </span>STATUS<span class="w">    </span>CREATED<span class="w">         </span>INFRA<span class="w"> </span>ID
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>abcd1234efgh<span class="w">  </span>my-pod<span class="w">  </span>Running<span class="w">   </span><span class="m">10</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">  </span>efgh5678ijkl
+</code></pre></div>
+<h3 id="3-podman-pod-stop">3. <code>podman pod stop</code></h3>
+<p>Stop a running pod.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>podman<span class="w"> </span>pod<span class="w"> </span>stop<span class="w"> </span>pod_name
+</code></pre></div>
+<h4 id="example_11">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>podman<span class="w"> </span>pod<span class="w"> </span>stop<span class="w"> </span>my-pod
+</code></pre></div>
+<h3 id="4-podman-pod-rm">4. <code>podman pod rm</code></h3>
+<p>Remove a pod.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>podman<span class="w"> </span>pod<span class="w"> </span>rm<span class="w"> </span>pod_name
+</code></pre></div>
+<h4 id="example_12">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>podman<span class="w"> </span>pod<span class="w"> </span>rm<span class="w"> </span>my-pod
+</code></pre></div>
+<h2 id="example-yaml-files">Example YAML Files</h2>
+<h3 id="container-definition">Container Definition</h3>
+<p>Podman does not use YAML files natively for container definitions. Instead, you use <code>podman run</code> commands or create Podman-compatible configuration files manually.</p>
+<h3 id="pod-definition">Pod Definition</h3>
+<p>Podman supports Kubernetes YAML files for defining pods.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Pod</span>
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="nt">metadata</span><span class="p">:</span>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-pod</span>
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="w">  </span><span class="nt">containers</span><span class="p">:</span>
+<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-container</span>
+<a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nginx</span>
+<a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a><span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">containerPort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">80</span>
+</code></pre></div>
+<p>To apply the YAML configuration, use:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>podman<span class="w"> </span>play<span class="w"> </span>kube<span class="w"> </span>pod.yaml
+</code></pre></div>
+<h2 id="summary">Summary</h2>
+<p>This tutorial introduces fundamental Podman commands and concepts. Podman provides a powerful and flexible way to manage containers and pods without a central daemon. For more detailed information, refer to the <a href="https://podman.io/">official Podman documentation</a>.</p>
 
 
 
@@ -877,44 +949,6 @@
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../cloud_ecosystems/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cloud Ecosystems">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                Cloud Ecosystems
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../data_engineering/" class="md-footer__link md-footer__link--next" aria-label="Next: Data Engineering">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Data Engineering
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1042,10 +1076,10 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.60a45f97.min.js"></script>
       
     
   </body>

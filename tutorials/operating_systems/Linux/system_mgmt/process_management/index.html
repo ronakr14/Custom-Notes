@@ -8,28 +8,24 @@
       
       
       
-        <link rel="canonical" href="https://ronakr14.github.io/Custom-Notes/tutorials/data_architecture/">
+        <link rel="canonical" href="https://ronakr14.github.io/Custom-Notes/tutorials/operating_systems/Linux/system_mgmt/process_management/">
       
       
-        <link rel="prev" href="../cloud_ecosystems/">
       
       
-        <link rel="next" href="../data_engineering/">
-      
-      
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
     
     
       
-        <title>Data Architecture - Custom Notes</title>
+        <title>Linux Process Management Commands - Custom Notes</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.a40c8224.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +44,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-database-and-data-warehouse-notes" class="md-skip">
+        <a href="#linux-process-management-commands" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +84,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Custom Notes" class="md-header__button md-logo" aria-label="Custom Notes" data-md-component="logo">
+    <a href="../../../../.." title="Custom Notes" class="md-header__button md-logo" aria-label="Custom Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data Architecture
+              Linux Process Management Commands
             
           </span>
         </div>
@@ -205,7 +201,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../../../.." class="md-tabs__link">
         
   
     
@@ -220,13 +216,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../" class="md-tabs__link">
           
   
     
@@ -244,7 +238,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../custom_libraries/" class="md-tabs__link">
+      <a href="../../../../../custom_libraries/" class="md-tabs__link">
         
   
     
@@ -261,7 +255,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../code_snippets/" class="md-tabs__link">
+      <a href="../../../../../code_snippets/" class="md-tabs__link">
         
   
     
@@ -314,7 +308,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Custom Notes" class="md-nav__button md-logo" aria-label="Custom Notes" data-md-component="logo">
+    <a href="../../../../.." title="Custom Notes" class="md-nav__button md-logo" aria-label="Custom Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -332,7 +326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -349,10 +343,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -411,24 +403,21 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -439,13 +428,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Tutorials
@@ -461,7 +450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../application_programming_interface/" class="md-nav__link">
+      <a href="../../../../application_programming_interface/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -482,7 +471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../artificial_intelligence/" class="md-nav__link">
+      <a href="../../../../artificial_intelligence/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -503,7 +492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../blockchain/" class="md-nav__link">
+      <a href="../../../../blockchain/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -524,7 +513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cloud_ecosystems/" class="md-nav__link">
+      <a href="../../../../cloud_ecosystems/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -542,30 +531,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Data Architecture
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../data_architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -574,35 +543,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#contents" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contents
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -615,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data_engineering/" class="md-nav__link">
+      <a href="../../../../data_engineering/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -636,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../devops_gitops/" class="md-nav__link">
+      <a href="../../../../devops_gitops/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -657,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ethical_hacking/" class="md-nav__link">
+      <a href="../../../../ethical_hacking/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -678,7 +618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../languages/" class="md-nav__link">
+      <a href="../../../../languages/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -699,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operating_systems/" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -720,7 +660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quantum_computing/" class="md-nav__link">
+      <a href="../../../../quantum_computing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -741,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../version_control_systems/" class="md-nav__link">
+      <a href="../../../../version_control_systems/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -769,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../custom_libraries/" class="md-nav__link">
+      <a href="../../../../../custom_libraries/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -789,7 +729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_snippets/" class="md-nav__link">
+      <a href="../../../../../code_snippets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -837,14 +777,137 @@
                   
 
 
-<h1 id="welcome-to-database-and-data-warehouse-notes">Welcome to Database and Data Warehouse notes.</h1>
-<h2 id="contents">Contents</h2>
-<ol>
-<li><a href="datawarehouse/">Data Warehouse</a></li>
-<li><a href="database/">Database Management Systems</a></li>
-<li><a href="sql/">SQL</a></li>
-<li><a href="nosql/">No SQL</a></li>
-</ol>
+<h1 id="linux-process-management-commands">Linux Process Management Commands</h1>
+<h2 id="overview">Overview</h2>
+<p>Linux provides several commands for managing processes, which include starting, stopping, and monitoring processes. These commands are essential for controlling and managing the execution of programs and tasks on a Linux system. This document covers basic and commonly used process management commands.</p>
+<h2 id="display-processes">Display Processes</h2>
+<h3 id="ps"><code>ps</code></h3>
+<p>Displays information about active processes.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ps
+</code></pre></div>
+<h4 id="example">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ps
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># Output: Lists processes running in the current shell</span>
+</code></pre></div>
+<h3 id="ps-aux"><code>ps aux</code></h3>
+<p>Displays a detailed list of all running processes, including those from other users.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ps<span class="w"> </span>aux
+</code></pre></div>
+<h4 id="example_1">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ps<span class="w"> </span>aux
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1"># Output: Detailed list of all running processes</span>
+</code></pre></div>
+<h3 id="top"><code>top</code></h3>
+<p>Displays a dynamic, real-time view of system processes.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>top
+</code></pre></div>
+<h4 id="example_2">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>top
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1"># Output: Real-time display of active processes and system resource usage</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># Use &#39;q&#39; to quit</span>
+</code></pre></div>
+<h3 id="htop"><code>htop</code></h3>
+<p>An interactive process viewer similar to <code>top</code>, but with a more user-friendly interface.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>htop
+</code></pre></div>
+<h4 id="example_3">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>htop
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="c1"># Output: Interactive display of processes with user-friendly interface</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="c1"># Use &#39;q&#39; to quit</span>
+</code></pre></div>
+<h3 id="pgrep"><code>pgrep</code></h3>
+<p>Searches for processes by name or other attributes.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pgrep<span class="w"> </span>&lt;name&gt;
+</code></pre></div>
+<h4 id="example_4">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>pgrep<span class="w"> </span>ssh
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="c1"># Output: Lists process IDs of processes matching &#39;ssh&#39;</span>
+</code></pre></div>
+<h2 id="manage-processes">Manage Processes</h2>
+<h3 id="kill"><code>kill</code></h3>
+<p>Sends a signal to a process, commonly used to terminate it.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">kill</span><span class="w"> </span>&lt;PID&gt;
+</code></pre></div>
+<h4 id="example_5">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nb">kill</span><span class="w"> </span><span class="m">1234</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="c1"># Sends the default SIGTERM signal to the process with PID 1234</span>
+</code></pre></div>
+<h3 id="kill-9"><code>kill -9</code></h3>
+<p>Forcibly terminates a process.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nb">kill</span><span class="w"> </span>-9<span class="w"> </span>&lt;PID&gt;
+</code></pre></div>
+<h4 id="example_6">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nb">kill</span><span class="w"> </span>-9<span class="w"> </span><span class="m">1234</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="c1"># Sends the SIGKILL signal to the process with PID 1234, forcibly terminating it</span>
+</code></pre></div>
+<h3 id="pkill"><code>pkill</code></h3>
+<p>Sends a signal to processes by name.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>pkill<span class="w"> </span>&lt;name&gt;
+</code></pre></div>
+<h4 id="example_7">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>pkill<span class="w"> </span>firefox
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="c1"># Sends the default SIGTERM signal to all processes named &#39;firefox&#39;</span>
+</code></pre></div>
+<h3 id="killall"><code>killall</code></h3>
+<p>Sends a signal to all processes with a specific name.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>killall<span class="w"> </span>&lt;name&gt;
+</code></pre></div>
+<h4 id="example_8">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>killall<span class="w"> </span>firefox
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="c1"># Sends the default SIGTERM signal to all processes named &#39;firefox&#39;</span>
+</code></pre></div>
+<h2 id="process-prioritization">Process Prioritization</h2>
+<h3 id="nice"><code>nice</code></h3>
+<p>Runs a command with a specified priority level.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>nice<span class="w"> </span>-n<span class="w"> </span>&lt;priority&gt;<span class="w"> </span>&lt;command&gt;
+</code></pre></div>
+<h4 id="example_9">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>nice<span class="w"> </span>-n<span class="w"> </span><span class="m">10</span><span class="w"> </span>gzip<span class="w"> </span>largefile.txt
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="c1"># Runs &#39;gzip largefile.txt&#39; with a priority level of 10</span>
+</code></pre></div>
+<h3 id="renice"><code>renice</code></h3>
+<p>Changes the priority of a running process.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>renice<span class="w"> </span>&lt;priority&gt;<span class="w"> </span>-p<span class="w"> </span>&lt;PID&gt;
+</code></pre></div>
+<h4 id="example_10">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>renice<span class="w"> </span><span class="m">5</span><span class="w"> </span>-p<span class="w"> </span><span class="m">1234</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="c1"># Changes the priority of the process with PID 1234 to 5</span>
+</code></pre></div>
+<h2 id="background-and-foreground-jobs">Background and Foreground Jobs</h2>
+<h3 id="_1"><code>&amp;</code></h3>
+<p>Runs a command in the background.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="nb">command</span><span class="w"> </span><span class="p">&amp;</span>
+</code></pre></div>
+<h4 id="example_11">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>sleep<span class="w"> </span><span class="m">60</span><span class="w"> </span><span class="p">&amp;</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="c1"># Runs the &#39;sleep 60&#39; command in the background</span>
+</code></pre></div>
+<h3 id="jobs"><code>jobs</code></h3>
+<p>Lists all background jobs.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="nb">jobs</span>
+</code></pre></div>
+<h4 id="example_12">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="nb">jobs</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="c1"># Output: Lists background jobs and their job numbers</span>
+</code></pre></div>
+<h3 id="fg"><code>fg</code></h3>
+<p>Brings a background job to the foreground.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="nb">fg</span><span class="w"> </span>%&lt;job_number&gt;
+</code></pre></div>
+<h4 id="example_13">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="nb">fg</span><span class="w"> </span>%1
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="c1"># Brings the background job with job number 1 to the foreground</span>
+</code></pre></div>
+<h3 id="bg"><code>bg</code></h3>
+<p>Resumes a suspended job in the background.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="nb">bg</span><span class="w"> </span>%&lt;job_number&gt;
+</code></pre></div>
+<h4 id="example_14">Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="nb">bg</span><span class="w"> </span>%1
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="c1"># Resumes the suspended job with job number 1 in the background</span>
+</code></pre></div>
+<h2 id="summary">Summary</h2>
+<p>Linux offers a variety of commands for managing processes, from displaying and monitoring to controlling and prioritizing. Understanding these commands helps effectively manage and troubleshoot processes on a Linux system. For more detailed information on each command, refer to the <a href="https://man7.org/linux/man-pages/">Linux manual pages</a>.</p>
 
 
 
@@ -877,44 +940,6 @@
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../cloud_ecosystems/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cloud Ecosystems">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                Cloud Ecosystems
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../data_engineering/" class="md-footer__link md-footer__link--next" aria-label="Next: Data Engineering">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Data Engineering
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1042,10 +1067,10 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.60a45f97.min.js"></script>
       
     
   </body>
